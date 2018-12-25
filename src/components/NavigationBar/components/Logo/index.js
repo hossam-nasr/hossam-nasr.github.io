@@ -1,0 +1,16 @@
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import { Icon } from "./styles";
+import logoImg from "./../../../../images/logo.png";
+
+class Logo extends Component {
+  render() {
+    return (
+      <Link to="/">
+        <Icon src={logoImg} alt="Icon" />
+      </Link>
+    );
+  }
+}
+
+export default Logo
