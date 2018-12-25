@@ -8,6 +8,8 @@ export const Container = styled.nav`
   flex-flow: row nowrap;
   justify-content: space-between;
   background-color: ${themeGet("colors.navigation.background", "black")};
+  box-shadow: 0px 2px 20px 2px ${themeGet('colors.navigation.shadow', 'gray')};
+  position: fixed;
 
   @media all and (max-width: 800px) {
     justify-content: space-between;
