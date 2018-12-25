@@ -4,7 +4,8 @@ const theme = {
             background: 'black',
             text: 'gray',
             'text-highlighted': 'white',
-            border: 'gray'
+            border: 'gray',
+            menu: '#DDDDDD',
         }
     },
     fonts: {

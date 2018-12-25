@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { Container, Menu, StyledLink } from "./styles";
+import {
+  Container,
+  Menu,
+  StyledLink,
+  Toggle,
+  Label,
+} from "./styles";
 import Logo from "./components/Logo";
 import MenuItem from "./components/MenuItem";
 
@@ -8,6 +14,8 @@ class NavigationBar extends Component {
     return (
       <Container>
         <Logo />
+        <Toggle id="menuToggle" type="checkbox" />
+        <Label htmlFor="menuToggle" />
         <Menu>
           <StyledLink to="/">
             <MenuItem selected={this.props.page === "Home"}>Home</MenuItem>
