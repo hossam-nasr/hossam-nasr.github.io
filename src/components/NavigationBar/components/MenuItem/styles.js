@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { themeGet } from "styled-system";
 
 export const Item = styled.li`
+  flex: 1;
   padding-right: 10px;
   padding-left: 10px;
   margin-left: 10px;
@@ -21,7 +22,7 @@ export const Item = styled.li`
     color: ${themeGet("colors.navigation.text-highlighted", "white")};
   }
 
-  @media all and (max-width: 600px) {
+  @media all and (max-width: 500px) {
     text-align: center;
     padding: 0px 10px 10px 10px;
     border-top: 1px solid ${themeGet("colors.navigation.border", "gray")};

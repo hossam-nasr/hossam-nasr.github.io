@@ -1,6 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
-import { Container, Menu } from "./styles";
+import { Container, Menu, StyledLink } from "./styles";
 import Logo from "./components/Logo";
 import MenuItem from "./components/MenuItem";
 
@@ -8,25 +7,27 @@ class NavigationBar extends Component {
   render() {
     return (
       <Container>
+        <Logo />
         <Menu>
-          <Logo />
-        </Menu>
-        <Menu>
-          <Link to="/">
-            <MenuItem selected={this.props.page==='Home'}>Home</MenuItem>
-          </Link>
-          <Link to="/about">
-            <MenuItem selected={this.props.page==='About'}>About</MenuItem>
-          </Link>
-          <Link to="/projects">
-            <MenuItem selected={this.props.page==='Projects'}>Projects</MenuItem>
-          </Link>
-          <Link to="/resume">
-            <MenuItem selected={this.props.page==='Resume'}>Resume</MenuItem>
-          </Link>
-          <Link to="/contact">
-            <MenuItem selected={this.props.page==='Contact'}>Contact</MenuItem>
-          </Link>
+          <StyledLink to="/">
+            <MenuItem selected={this.props.page === "Home"}>Home</MenuItem>
+          </StyledLink>
+          <StyledLink to="/about">
+            <MenuItem selected={this.props.page === "About"}>About</MenuItem>
+          </StyledLink>
+          <StyledLink to="/projects">
+            <MenuItem selected={this.props.page === "Projects"}>
+              Projects
+            </MenuItem>
+          </StyledLink>
+          <StyledLink to="/resume">
+            <MenuItem selected={this.props.page === "Resume"}>Resume</MenuItem>
+          </StyledLink>
+          <StyledLink to="/contact">
+            <MenuItem selected={this.props.page === "Contact"}>
+              Contact
+            </MenuItem>
+          </StyledLink>
         </Menu>
       </Container>
     );
