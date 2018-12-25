@@ -7,9 +7,9 @@ export const Item = styled.li`
   padding-left: 10px;
   margin-left: 10px;
   margin-right: 10px;
-  font-family: ${themeGet("fonts.primary", "Arial")};
-  font-size: 18px;
-  font-weight: bold;
+  font-family: ${themeGet("fonts.menu", "Arial")};
+  font-size: 1.5em;
+  font-weight: none;
   background-color: ${themeGet("colors.navigation.background", "black")};
   color: ${props =>
     props.selected

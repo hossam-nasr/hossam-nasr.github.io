@@ -7,10 +7,15 @@ const theme = {
       border: "gray",
       menu: "#DDDDDD",
       shadow: "#333333"
-    }
+    },
+    bannerBackground: "rgba(0, 0, 0, 0.45)",
+    primary: "#DDDDDD",
   },
   fonts: {
-    primary: "Arial"
+    primary: "Raleway",
+    menu: "Damion",
+    greeting: "Damion",
+    name: 'Raleway, serif',
   }
 };
 
