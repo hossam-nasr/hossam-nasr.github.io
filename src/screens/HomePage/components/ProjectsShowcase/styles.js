@@ -6,6 +6,7 @@ import { Flex } from "grid-styled";
 export const Container = styled(Flex)`
   flex-flow: column nowrap;
   justify-content: center;
+  background-color: ${themeGet("colors.background.secondary", "black")};
 `;
 
 export const BoxesContainer = styled.div`
@@ -19,14 +20,15 @@ export const BoxesContainer = styled.div`
 
 export const ButtonContainer = styled(Flex)`
   width: 100%;
-  justify-content: center;  
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: ${themeGet("colors.background.secondary", "black")};
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding: 20px 20px 40px 20px;
 `;
 
 export const Button = styled.div`
-  width: 15%;
+  width: 320px;
   text-align: center;
 `;
 

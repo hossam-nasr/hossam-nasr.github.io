@@ -10,6 +10,7 @@ export const Container = styled.nav`
   background-color: ${themeGet("colors.navigation.background", "black")};
   box-shadow: 0px 2px 20px 2px ${themeGet('colors.navigation.shadow', 'gray')};
   position: fixed;
+  z-index: 2;
 
   @media all and (max-width: 800px) {
     justify-content: space-between;
