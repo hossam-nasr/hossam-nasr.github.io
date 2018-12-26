@@ -34,7 +34,7 @@ export const Subtitle = styled.div`
 `;
 
 export const Dash = styled.div`
-  background-color: ${themeGet("colors.primary", "white")};
+  background-color: ${props => themeGet(`colors.${props.color}`, "white")};
   width: 20%;
   height: 0.5vh;
   position: block;
@@ -45,7 +45,7 @@ export const Dash = styled.div`
 `;
 
 export const Dot = styled.div`
-  background-color: ${themeGet("colors.primary", "white")};
+  background-color: ${props => themeGet(`colors.${props.color}`, "white")};
   border-radius: 50%;
   behavior: url(PIE.htc);
   width: 1.2vmin;

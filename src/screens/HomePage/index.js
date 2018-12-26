@@ -12,7 +12,6 @@ class HomePage extends Component {
         <NavigationBar page="Home" />
         <ContentContainer>
           <GreetingBanner />
-          <div style={{ height: "500px" }} />
           <Section
             title={SWE.title}
             subtitle={SWE.subtitle}

@@ -14,7 +14,8 @@ const theme = {
       tertiary: "#f9f9f9",
       banner: "rgba(0, 0, 0, 0.6)"
     },
-    primary: "#DDDDDD"
+    primary: "#DDDDDD",
+    secondary: "#2b2b2b"
   },
   fonts: {
     primary: "Raleway",

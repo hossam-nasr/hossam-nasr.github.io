@@ -14,11 +14,11 @@ class Section extends Component {
     return (
       <Banner background={this.props.background}>
         <TitleContainer>
-          <Dot />
-          <Dash />
+          <Dot color={this.props.fontColor} />
+          <Dash color={this.props.fontColor} />
           <Title fontColor={this.props.fontColor}>{this.props.title}</Title>
-          <Dash />
-          <Dot />
+          <Dash color={this.props.fontColor} />
+          <Dot color={this.props.fontColor} />
         </TitleContainer>
         <SubtitleContainer>
           <Subtitle fontColor={this.props.fontColor}>
