@@ -11,6 +11,9 @@ export const Banner = styled.div`
 
   background-image: url(${bannerImg});
   background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
