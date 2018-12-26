@@ -19,10 +19,9 @@ class ProjectBox extends Component {
           <Title>{this.props.title}</Title>
           <Description>{this.props.description}</Description>
           <ButtonContainer>
-            <MoreButton
-              content="Learn more"
-              url={`/projects?project=${this.props.url}`}
-            />
+            <MoreButton url={`/projects?project=${this.props.url}`}>
+              Learn more
+            </MoreButton>
           </ButtonContainer>
         </Overlay>
       </Container>

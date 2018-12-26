@@ -6,7 +6,7 @@ class MoreButton extends Component {
     return (
       <StyledLink to={this.props.url}>
         <Button>
-          <ButtonContent>{this.props.content}</ButtonContent>
+          <ButtonContent>{this.props.children}</ButtonContent>
         </Button>
       </StyledLink>
     );

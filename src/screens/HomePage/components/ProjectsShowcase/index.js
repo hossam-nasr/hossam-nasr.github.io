@@ -1,6 +1,7 @@
 import React, { Component } from "react";
-import { Container } from "./styles";
+import { Container, BoxesContainer, ButtonContainer, Button } from "./styles";
 import ProjectBox from "./../../../../components/ProjectBox";
+import MoreButton from "./../../../../components/MoreButton";
 
 class ProjectsShowcase extends Component {
   render() {
@@ -15,7 +16,16 @@ class ProjectsShowcase extends Component {
       />
     ));
 
-    return <Container>{boxes}</Container>;
+    return (
+      <Container>
+        <BoxesContainer>{boxes}</BoxesContainer>
+        <ButtonContainer>
+          <Button>
+            <MoreButton url="/projects">View more projects</MoreButton>
+          </Button>
+        </ButtonContainer>
+      </Container>
+    );
   }
 }
 
