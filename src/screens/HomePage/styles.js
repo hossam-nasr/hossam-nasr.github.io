@@ -10,6 +10,7 @@ export const Banner = styled.div`
   align-content: center;
 
   background-image: url(${bannerImg});
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
