@@ -50,6 +50,7 @@ export const TextContainer = styled.div`
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
+  text-align: center;
 `;
 
 export const NameDash = styled.div`
@@ -79,8 +80,9 @@ export const NameText = styled.div`
   letter-spacing: 1vw;
   font-size: 6.7vw;
   margin: 1vh 3vw 4vh 3vw;
+  text-align: center;
   @media all and (max-width: 500px) {
-    font-size: 11vw;
+    font-size: 10vw;
   }
 `;
 
