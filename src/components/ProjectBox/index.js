@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 import MoreButton from "./../MoreButton";
-import { Container, Overlay, Title, Description } from "./styles";
+import {
+  Container,
+  Overlay,
+  Title,
+  Description,
+  ButtonContainer
+} from "./styles";
 
 class ProjectBox extends Component {
   render() {
@@ -10,13 +16,14 @@ class ProjectBox extends Component {
         backgroundcolor={this.props.background}
       >
         <Overlay className="ProjectBox_overlay">
-          <Title>
-            {this.props.title}
-          </Title>
-          <Description>
-            {this.props.description}
-          </Description>
-          <MoreButton />
+          <Title>{this.props.title}</Title>
+          <Description>{this.props.description}</Description>
+          <ButtonContainer>
+            <MoreButton
+              content="Learn more"
+              url={`/projects?project=${this.props.url}`}
+            />
+          </ButtonContainer>
         </Overlay>
       </Container>
     );

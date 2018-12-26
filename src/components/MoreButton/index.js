@@ -1,10 +1,16 @@
 import React, { Component } from "react";
-import {Button} from './styles'
+import { Button, ButtonContent, StyledLink } from "./styles";
 
 class MoreButton extends Component {
-    render () {
-        return <Button/>
-    }
+  render() {
+    return (
+      <StyledLink to={this.props.url}>
+        <Button>
+          <ButtonContent>{this.props.content}</ButtonContent>
+        </Button>
+      </StyledLink>
+    );
+  }
 }
 
-export default MoreButton
+export default MoreButton;

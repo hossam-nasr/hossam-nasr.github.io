@@ -7,6 +7,7 @@ class ProjectsShowcase extends Component {
     const boxes = this.props.projects.map(project => (
       <ProjectBox
         key={project.key}
+        url={project.key}
         pic={project.pic}
         title={project.title}
         description={project.description}

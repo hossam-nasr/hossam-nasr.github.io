@@ -70,3 +70,8 @@ export const Description = styled.div`
   color: ${themeGet("colors.primary", "white")};
   flex-shrink: 0;
 `;
+
+export const ButtonContainer = styled.div`
+  width: 60%;
+  text-align: center;
+`;
