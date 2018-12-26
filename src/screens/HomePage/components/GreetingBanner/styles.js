@@ -15,7 +15,13 @@ export const Banner = styled.div`
   -moz-background-size: cover;
   -o-background-size: cover;
   background-position: center center;
+  -webkit-background-position: center center;
+  -moz-background-position: center center;
+  -o-background-position: center center;
   background-repeat: no-repeat;
+  -webkit-background-repeat: no-repeat;
+  -moz-background-repeat: no-repeat;
+  -o-background-repeat: no-repeat;
   background-attachment: fixed;
   height: 90vh;
   background-color: ${themeGet(
@@ -23,6 +29,10 @@ export const Banner = styled.div`
     "rgba(0, 0, 0, 0.5)"
   )};
   background-blend-mode: overlay;
+
+  @media (max-width: 500px) {
+    background-attachment: scroll;
+  }
 `;
 
 export const GreetingText = styled.div`
@@ -75,7 +85,7 @@ export const NameText = styled.div`
 `;
 
 export const DescriptionText = styled.div`
-  font-family: ${themeGet("fonts.primary", 'Arial, sans-serif')};
+  font-family: ${themeGet("fonts.primary", "Arial, sans-serif")};
   color: ${themeGet("colors.primary", "white")};
   font-size: 3vw;
   text-transform: capitalize;

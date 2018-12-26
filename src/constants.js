@@ -2,7 +2,7 @@ import lightSourceLogo from "./images/lightsourcelogo.png";
 import theKeyLogo from "./images/thekeylogo.png";
 import personalSiteLogo from "./images/logo.png";
 
-export const greeting = "Hello World, I'm";
+export const greeting = "Hello World, I'm edited2";
 
 export const descriptions = [
   "student",
