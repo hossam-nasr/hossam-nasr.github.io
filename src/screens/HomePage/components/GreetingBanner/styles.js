@@ -26,7 +26,10 @@ export const GreetingText = styled.div`
   font-family: ${themeGet("fonts.greeting", '"Bickham Script", cursive')};
   color: ${themeGet("colors.primary", "white")};
   font-style: italic;
-  font-size: 2.5vw;
+  font-size: 3.2vw;
+  @media all and (max-width: 500px) {
+    font-size: 7vw;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -40,6 +43,9 @@ export const NameDash = styled.div`
   background-color: ${themeGet("colors.primary", "white")};
   width: 13vw;
   height: 0.5vh;
+  @media all and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const NameDot = styled.div`
@@ -48,6 +54,9 @@ export const NameDot = styled.div`
   behavior: url(PIE.htc);
   width: 1.2vh;
   height: 1.2vh;
+  @media all and (max-width: 500px) {
+    display: none;
+  }
 `;
 
 export const NameText = styled.div`
@@ -57,6 +66,9 @@ export const NameText = styled.div`
   letter-spacing: 1vw;
   font-size: 6.7vw;
   margin: 1vh 3vw 4vh 3vw;
+  @media all and (max-width: 500px) {
+    font-size: 11vw;
+  }
 `;
 
 export const DescriptionText = styled.div`
@@ -67,6 +79,9 @@ export const DescriptionText = styled.div`
   margin-right: 3vw;
   margin-left: 3vw;
   padding-bottom: 3vh;
+  @media all and (max-width: 500px) {
+    font-size: 4.7vw;
+  }
 `;
 
 export const DescriptionDot = styled.div`

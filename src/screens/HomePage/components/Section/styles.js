@@ -16,6 +16,9 @@ export const Title = styled.div`
   color: ${props => themeGet(`colors.${props.fontColor}`, "black")};
   margin: 1vh 4vw 4vh 4vw;
   flex-shrink: 0;
+  @media all and (max-width: 500px) {
+    font-size: 5vmax;
+  }
 `;
 
 export const Subtitle = styled.div`
@@ -31,6 +34,13 @@ export const Subtitle = styled.div`
   -webkit-column-gap: 4%;
   -moz-column-gap: 4%;
   column-gap: 4%;
+  @media all and (max-width: 500px) {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    font-size: 2.4vmax;
+    line-height: 6vmin;
+  }
 `;
 
 export const Dash = styled.div`
