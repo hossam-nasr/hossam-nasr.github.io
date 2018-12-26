@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Flex } from "grid-styled";
 import { themeGet } from "styled-system";
 
-export const Container = styled(Flex)`
+export const Container = styled.div`
+  display: flex;
   background-color: ${themeGet("colors.background.secondary")};
   height: 320px;
   width: 320px;
@@ -12,7 +12,7 @@ export const Container = styled(Flex)`
   background-repeat: no-repeat;
   background-position: center center;
   flex-shrink: 1;
-  border: 3px solid ${themeGet('colors.primary', 'white')}; 
+  border: 3px solid ${themeGet("colors.primary", "white")};
   border-radius: 7px;
   margin: 20px;
 
@@ -28,7 +28,8 @@ export const Container = styled(Flex)`
   }
 `;
 
-export const Overlay = styled(Flex)`
+export const Overlay = styled.div`
+  display: flex;
   width: 100%;
   height: 100%;
   flex-flow: column nowrap;
@@ -46,7 +47,7 @@ export const Title = styled.div`
   text-align: center;
   font-family: ${themeGet("fonts.title")};
   font-size: 300%;
-  color: ${themeGet('colors.primary', "white")};
+  color: ${themeGet("colors.primary", "white")};
   flex-shrink: 0;
 `;
 
@@ -55,6 +56,6 @@ export const Description = styled.div`
   text-align: center;
   font-family: ${themeGet("fonts.primary")};
   font-size: 140%;
-  color: ${themeGet('colors.primary', "white")};
+  color: ${themeGet("colors.primary", "white")};
   flex-shrink: 0;
 `;

@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import { Flex } from "grid-styled";
 import { themeGet } from "styled-system";
 
-export const Container = styled(Flex)`
+export const Container = styled.div`
+  display: flex;
   flex-flow: row wrap;
   background-color: ${themeGet("colors.background.secondary")};
   justify-content: space-evenly;
