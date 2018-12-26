@@ -16,14 +16,14 @@ import { greeting, descriptions } from "./../../constants";
 class HomePage extends Component {
   render() {
     const descriptionTexts = descriptions.slice(0, -1).map(description => (
-      <TextContainer>
+      <TextContainer key={description}>
         <DescriptionText>{description}</DescriptionText>
         <DescriptionDot />
       </TextContainer>
     ));
 
     descriptionTexts.push(
-      <TextContainer>
+      <TextContainer key={descriptions[descriptions.length - 1]}>
         <DescriptionText>
           {descriptions[descriptions.length - 1]}
         </DescriptionText>

@@ -64,7 +64,7 @@ export const StyledLink = styled(Link)`
 export const Toggle = styled.input`
   :checked ~ ul {
     opacity: 1;
-    height: 50vh;
+    height: 100vh;
     visibility: visible;
     transition: all 1s ease;
   }

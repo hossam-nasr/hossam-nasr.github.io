@@ -15,8 +15,8 @@ export const Item = styled.li`
     props.selected
       ? themeGet("colors.navigation.text-highlighted", "white")
       : themeGet("colors.navigation.text", "gray")};
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
 
   :hover {
     color: ${themeGet("colors.navigation.text-highlighted", "white")};

@@ -8,7 +8,7 @@ const theme = {
       menu: "#DDDDDD",
       shadow: "#333333"
     },
-    bannerBackground: "rgba(0, 0, 0, 0.45)",
+    bannerBackground: "rgba(0, 0, 0, 0.6)",
     primary: "#DDDDDD",
   },
   fonts: {

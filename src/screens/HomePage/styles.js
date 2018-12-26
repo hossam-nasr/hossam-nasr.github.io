@@ -21,11 +21,11 @@ export const Banner = styled.div`
   background-blend-mode: overlay;
 `;
 
-export const GreetingText = styled.text`
+export const GreetingText = styled.div`
   font-family: ${themeGet("fonts.greeting", '"Bickham Script", cursive')};
   color: ${themeGet("colors.primary", "white")};
   font-style: italic;
-  font-size: 3em;
+  font-size: 2.5vw;
 `;
 
 export const TextContainer = styled.div`
@@ -37,40 +37,40 @@ export const TextContainer = styled.div`
 
 export const NameDash = styled.div`
   background-color: ${themeGet("colors.primary", "white")};
-  width: 20vw;
-  height: 0.3em;
+  width: 13vw;
+  height: 0.5vh;
 `;
 
 export const NameDot = styled.div`
   background-color: ${themeGet("colors.primary", "white")};
   border-radius: 50%;
   behavior: url(PIE.htc);
-  width: 0.7em;
-  height: 0.7em;
+  width: 1.2vh;
+  height: 1.2vh;
 `;
 
-export const NameText = styled.text`
+export const NameText = styled.div`
   font-family: ${themeGet("fonts.name", '"Bickham Script", cursive')};
   color: ${themeGet("colors.primary", "white")};
   font-weight: bold;
-  letter-spacing: 0.1em;
-  font-size: 6.5em;
-  margin: 0.3em 0.7em 0.5em 0.7em;
+  letter-spacing: 1vw;
+  font-size: 6.7vw;
+  margin: 1vh 3vw 4vh 3vw;
 `;
 
-export const DescriptionText = styled.text`
+export const DescriptionText = styled.div`
   font-family: ${themeGet("fonts.primary", 'Arial, sans-serif')};
   color: ${themeGet("colors.primary", "white")};
-  font-size: 3.4em;
+  font-size: 3vw;
   text-transform: capitalize;
-  margin-right: 0.7em;
-  margin-left: 0.7em;
+  margin-right: 3vw;
+  margin-left: 3vw;
 `;
 
 export const DescriptionDot = styled.div`
   background-color: ${themeGet("colors.primary", "white")};
   border-radius: 50%;
   behavior: url(PIE.htc);
-  width: 1em;
-  height: 1em;
+  width: 0.8vw;
+  height: 0.8vw;
 `;
