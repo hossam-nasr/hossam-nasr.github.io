@@ -7,6 +7,5 @@ export const Container = styled.div`
   background-color: ${themeGet("colors.background.secondary")};
   justify-content: space-between;
   justify-content: space-around;
-  justify-content: space-evenly;
   padding-bottom: 35px;
 `;

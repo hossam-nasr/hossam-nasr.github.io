@@ -35,7 +35,6 @@ export const Overlay = styled.div`
   flex-flow: column nowrap;
   justify-content: space-between;
   justify-content: space-around;
-  justify-content: space-evenly;
   align-items: center;
   visibility: hidden;
   background-color: transparent;
