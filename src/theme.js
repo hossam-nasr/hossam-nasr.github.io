@@ -8,14 +8,20 @@ const theme = {
       menu: "#DDDDDD",
       shadow: "#333333"
     },
-    bannerBackground: "rgba(0, 0, 0, 0.6)",
-    primary: "#DDDDDD",
+    background: {
+      primary: "#e5e5e5",
+      secondary: "#2b2b2b",
+      tertiary: "#f9f9f9",
+      banner: "rgba(0, 0, 0, 0.6)"
+    },
+    primary: "#DDDDDD"
   },
   fonts: {
     primary: "Raleway",
     menu: "Damion",
     greeting: "Damion",
-    name: 'Raleway, serif',
+    name: "Raleway, serif",
+    title: "Damion, sans-serif"
   }
 };
 

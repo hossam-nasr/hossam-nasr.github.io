@@ -1,0 +1,73 @@
+import styled from "styled-components";
+import { Flex } from "grid-styled";
+import { themeGet } from "styled-system";
+
+export const Banner = styled(Flex)`
+  background-color: ${props => themeGet(`colors.${props.background}`, "white")};
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: flex-start;
+`;
+
+export const Title = styled.div`
+  font-family: ${themeGet("fonts.title")};
+  font-size: 4vmax;
+  color: ${props => themeGet(`colors.${props.fontColor}`, "black")};
+  margin: 1vh 4vw 4vh 4vw;
+  flex-shrink: 0;
+`;
+
+export const Subtitle = styled.div`
+  font-family: ${themeGet("fonts.primary")};
+  text-align: left;
+  font-size: 1.4vmax;
+  line-height: 5vmin;
+  color: ${props => themeGet(`colors.${props.fontColor}`, "black")};
+  margin: 1vh 5vw 5vh 5vw;
+  -webkit-column-count: 2;
+  -moz-column-count: 2;
+  column-count: 2;
+  -webkit-column-gap: 4%;
+  -moz-column-gap: 4%;
+  column-gap: 4%;
+`;
+
+export const Dash = styled.div`
+  background-color: ${themeGet("colors.primary", "white")};
+  width: 20%;
+  height: 0.5vh;
+  position: block;
+  flex-shrink: 1;
+  @media all and (max-width: 500px) {
+    display: none;
+  }
+`;
+
+export const Dot = styled.div`
+  background-color: ${themeGet("colors.primary", "white")};
+  border-radius: 50%;
+  behavior: url(PIE.htc);
+  width: 1.2vmin;
+  height: 1.2vmin;
+  @media all and (max-width: 500px) {
+    display: none;
+  }
+`;
+
+export const TitleContainer = styled.div`
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+`;
+
+export const SubtitleContainer = styled(Flex)`
+  flex-flow: row wrap;
+  justify-content: flex-start;
+  text-align: left;
+  width: 100%;
+  position: block;
+`;
