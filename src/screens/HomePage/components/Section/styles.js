@@ -28,9 +28,9 @@ export const Subtitle = styled.div`
   line-height: 5vmin;
   color: ${props => themeGet(`colors.${props.fontColor}`, "black")};
   margin: 1vh 5vw 5vh 5vw;
-  -webkit-column-count: 2;
-  -moz-column-count: 2;
-  column-count: 2;
+  -webkit-column-count: ${props => (props.columns ? 2 : 1)};
+  -moz-column-count: ${props => (props.columns ? 2 : 1)};
+  column-count: ${props => (props.columns ? 2 : 1)};
   -webkit-column-gap: 4%;
   -moz-column-gap: 4%;
   column-gap: 4%;
@@ -76,8 +76,7 @@ export const TitleContainer = styled.div`
 
 export const SubtitleContainer = styled(Flex)`
   flex-flow: row wrap;
-  justify-content: flex-start;
-  text-align: left;
+  justify-content: center;
   width: 100%;
   position: block;
 `;

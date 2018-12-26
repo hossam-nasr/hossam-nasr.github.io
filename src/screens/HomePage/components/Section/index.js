@@ -21,7 +21,10 @@ class Section extends Component {
           <Dot color={this.props.fontColor} />
         </TitleContainer>
         <SubtitleContainer>
-          <Subtitle fontColor={this.props.fontColor}>
+          <Subtitle
+            columns={this.props.columns}
+            fontColor={this.props.fontColor}
+          >
             {this.props.subtitle}
           </Subtitle>
         </SubtitleContainer>

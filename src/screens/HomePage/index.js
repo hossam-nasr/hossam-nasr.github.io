@@ -2,8 +2,9 @@ import React, { Component } from "react";
 import NavigationBar from "./../../components/NavigationBar";
 import ContentContainer from "./../../components/ContentContainer";
 import GreetingBanner from "./components/GreetingBanner";
+import ProjectsShowcase from "./components/ProjectsShowcase"
 import Section from "./components/Section";
-import { SWE } from "./../../constants.js";
+import { SWE, projects } from "./../../constants.js";
 
 class HomePage extends Component {
   render() {
@@ -17,7 +18,16 @@ class HomePage extends Component {
             subtitle={SWE.subtitle}
             background={SWE.background}
             fontColor={SWE.fontColor}
+            columns
           />
+          <Section 
+            title={projects.section.title}
+            subtitle={projects.section.subtitle}
+            background={projects.section.background}
+            fontColor={projects.section.fontColor}
+            columns={false}
+          />
+          <ProjectsShowcase projects={projects.section.summaryProjects}/>
         </ContentContainer>
       </div>
     );
