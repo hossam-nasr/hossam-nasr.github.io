@@ -41,6 +41,16 @@ export const Overlay = styled.div`
   opacity: 0;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
+  @media all and (max-width: 500px) {
+    visibility: visible;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    background-color: ${themeGet(
+      "colors.background.projectBox",
+      "rgba(0, 0, 0, 0.5)"
+    )};
+    opacity: 1;
+  }
 `;
 
 export const Title = styled.div`
