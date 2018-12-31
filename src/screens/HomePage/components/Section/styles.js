@@ -43,9 +43,22 @@ export const Subtitle = styled.div`
   }
 `;
 
+export const DashContainer = styled(Flex)`
+  align-items: center;
+  width: 100%;
+`;
+
+export const DashContainerLeft = styled(DashContainer)`
+  justify-content: flex-end;
+`;
+
+export const DashContainerRight = styled(DashContainer)`
+  justify-content: flex-start;
+`;
+
 export const Dash = styled.div`
   background-color: ${props => themeGet(`colors.${props.color}`, "white")};
-  width: 20%;
+  width: 80%;
   height: 0.5vh;
   position: block;
   flex-shrink: 1;

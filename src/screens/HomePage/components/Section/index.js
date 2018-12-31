@@ -4,6 +4,8 @@ import {
   Title,
   TitleContainer,
   SubtitleContainer,
+  DashContainerLeft,
+  DashContainerRight,
   Dot,
   Dash,
   Subtitle
@@ -14,11 +16,15 @@ class Section extends Component {
     return (
       <Banner background={this.props.background}>
         <TitleContainer>
+          <DashContainerLeft>
           <Dot color={this.props.fontColor} />
-          <Dash color={this.props.fontColor} />
+            <Dash color={this.props.fontColor} />
+          </DashContainerLeft>
           <Title fontColor={this.props.fontColor}>{this.props.title}</Title>
-          <Dash color={this.props.fontColor} />
-          <Dot color={this.props.fontColor} />
+          <DashContainerRight>
+            <Dash color={this.props.fontColor} />
+            <Dot color={this.props.fontColor} />
+          </DashContainerRight>
         </TitleContainer>
         <SubtitleContainer>
           <Subtitle
