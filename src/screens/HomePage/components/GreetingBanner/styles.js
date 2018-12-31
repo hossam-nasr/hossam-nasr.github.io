@@ -22,17 +22,13 @@ export const Banner = styled.div`
   -webkit-background-repeat: no-repeat;
   -moz-background-repeat: no-repeat;
   -o-background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: ${props => (props.ismobile ? "scroll" : "fixed")};
   height: 90vh;
   background-color: ${themeGet(
     "colors.background.banner",
     "rgba(0, 0, 0, 0.5)"
   )};
   background-blend-mode: overlay;
-
-  @media (max-width: 500px) {
-    background-attachment: scroll;
-  }
 `;
 
 export const GreetingText = styled.div`

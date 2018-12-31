@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { isMobile } from "react-device-detect";
 import {
   Banner,
   GreetingText,
@@ -28,7 +29,7 @@ class GreetingBanner extends Component {
       </TextContainer>
     );
     return (
-      <Banner>
+      <Banner ismobile={isMobile}>
         <GreetingText>{greeting}</GreetingText>
         <TextContainer>
           <NameDot />
