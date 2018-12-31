@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import NavigationBar from "./../../components/NavigationBar";
 import ContentContainer from "./../../components/ContentContainer";
+import Section from "./components/Section";
 import GreetingBanner from "./components/GreetingBanner";
 import ProjectsShowcase from "./components/ProjectsShowcase";
-import Section from "./components/Section";
-import { SWE, projects } from "./../../constants.js";
+import AboutMeSection from "./components/AboutMeSection";
+import { SWE, projects, AboutMe } from "./../../constants.js";
 
 class HomePage extends Component {
   render() {
@@ -28,6 +29,7 @@ class HomePage extends Component {
             columns={false}
           />
           <ProjectsShowcase projects={projects.section.summaryProjects} />
+          <AboutMeSection info={AboutMe.section} />
         </ContentContainer>
       </div>
     );
