@@ -10,23 +10,29 @@ export const Button = styled.button`
   text-align: center;
   font-size: 130%;
   padding: 5%;
-  border: 2px solid ${themeGet("colors.primary", "white")};
+  border: 2px solid ${props => themeGet(`colors.${props.primary}`, "white")};
   transition: all 0.5s ease;
 
-  :hover, :active, :focus {
+  :hover,
+  :active,
+  :focus {
     transition: all 0.5s ease;
-    background-color: ${themeGet("colors.primary", "white")};
+    background-color: ${props => themeGet(`colors.${props.primary}`, "white")};
   }
 
-  :hover span, :active span, :focus span {
+  :hover span,
+  :active span,
+  :focus span {
     padding-right: 25px;
-    color: ${themeGet("colors.secondary", "black")};
+    color: ${props => themeGet(`colors.${props.secondary}`, "black")};
   }
 
-  :hover span:after, :active span:after, :focus span:after {
+  :hover span:after,
+  :active span:after,
+  :focus span:after {
     opacity: 1;
     right: 0;
-    color: ${themeGet("colors.secondary", "white")};
+    color: ${props => themeGet(`colors.${props.secondary}`, "white")};
   }
 `;
 
@@ -44,7 +50,7 @@ export const StyledLink = styled(Link)`
 
 export const ButtonContent = styled.span`
   cursor: pointer;
-  color: ${themeGet("colors.primary", "white")};
+  color: ${props => themeGet(`colors.${props.primary}`, "white")};
   display: inline-block;
   position: relative;
   transition: all 0.5s ease;
@@ -52,7 +58,7 @@ export const ButtonContent = styled.span`
   :after {
     content: "\\2192";
     position: absolute;
-    color: ${themeGet("colors.primary", "white")};
+    color: ${props => themeGet(`colors.${props.primary}`, "white")};
     opacity: 0;
     top: 0;
     right: -20px;
