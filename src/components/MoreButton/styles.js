@@ -32,7 +32,7 @@ export const Button = styled.button`
   :focus span:after {
     opacity: 1;
     right: 0;
-    color: ${props => themeGet(`colors.${props.secondary}`, "white")};
+    color: ${props => themeGet(`colors.${props.secondary}`, "black")};
   }
 `;
 

@@ -4,7 +4,7 @@ import { Button, ButtonContent, StyledLink } from "./styles";
 class MoreButton extends Component {
   render() {
     const primary = this.props.primary ? this.props.primary : "primary";
-    const secondary = this.props.secondary ? this.props.seconday : "secondary";
+    const secondary = this.props.secondary ? this.props.secondary : "secondary";
     return (
       <StyledLink to={this.props.url}>
         <Button primary={primary} secondary={secondary}>
