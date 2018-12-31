@@ -8,12 +8,15 @@ import {
   ButtonContainer
 } from "./styles";
 
+import { isMobile } from "react-device-detect";
+
 class ProjectBox extends Component {
   render() {
     return (
       <Container
         backgroundimage={this.props.pic}
         backgroundcolor={this.props.background}
+        ismobile={isMobile}
       >
         <Overlay className="ProjectBox_overlay">
           <Title>{this.props.title}</Title>

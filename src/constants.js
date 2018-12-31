@@ -21,6 +21,15 @@ export const SWE = {
   fontColor: "secondary"
 };
 
+export const AboutMe = {
+  section: {
+    title: "A little about me!",
+    subtitle: "",
+    background: "background.tertiary",
+    fontColor: "tertiary"
+  }
+};
+
 export const projects = {
   section: {
     title: "Projects!",
@@ -32,21 +41,21 @@ export const projects = {
         title: "LightSource",
         key: "lightsource",
         pic: lightSourceLogo,
-        background: 'black',
+        background: "black",
         description: "I developed this infinite clicker game from scratch!"
       },
       {
         title: "The Key",
         key: "thekey",
         pic: theKeyLogo,
-        background: 'white',
+        background: "white",
         description: "I worked on this iOS and Android app with HSA Dev!"
       },
       {
         title: "This Site!",
         key: "personalsite",
         pic: personalSiteLogo,
-        background: 'transparent',
+        background: "transparent",
         description: "I built this site using React!"
       }
     ]

@@ -13,17 +13,17 @@ export const Button = styled.button`
   border: 2px solid ${themeGet("colors.primary", "white")};
   transition: all 0.5s ease;
 
-  :hover {
+  :hover, :active {
     transition: all 0.5s ease;
     background-color: ${themeGet("colors.primary", "white")};
   }
 
-  :hover span {
+  :hover span, :active span {
     padding-right: 25px;
     color: ${themeGet("colors.secondary", "black")};
   }
 
-  :hover span:after {
+  :hover span:after, :active span:after {
     opacity: 1;
     right: 0;
     color: ${themeGet("colors.secondary", "white")};

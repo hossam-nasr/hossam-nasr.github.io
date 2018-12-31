@@ -11,12 +11,13 @@ const theme = {
     background: {
       primary: "#e5e5e5",
       secondary: "#2b2b2b",
-      tertiary: "#f9f9f9",
+      tertiary: "#bcbcbc",
       banner: "rgba(0, 0, 0, 0.6)",
       projectBox: "rgba(0,0,0,0.7)"
     },
     primary: "#DDDDDD",
-    secondary: "#2b2b2b"
+    secondary: "#2b2b2b",
+    tertiary: "#1c1c1c"
   },
   fonts: {
     primary: "Raleway",
