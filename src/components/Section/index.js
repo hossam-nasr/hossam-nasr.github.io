@@ -34,6 +34,7 @@ class Section extends Component {
             {this.props.subtitle}
           </Subtitle>
         </SubtitleContainer>
+        {this.props.children}
       </Banner>
     );
   }

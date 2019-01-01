@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Container, ButtonContainer, Button } from "./styles";
 import MoreButton from "./../../../../components/MoreButton";
-import Section from "./../Section";
+import Section from "./../../../../components/Section";
 
 class AboutMeSection extends Component {
   render() {
@@ -14,18 +14,19 @@ class AboutMeSection extends Component {
           background={info.background}
           fontColor={info.fontColor}
           columns
-        />
-        <ButtonContainer>
-          <Button>
-            <MoreButton
-              primary={info.fontColor}
-              secondary={info.background}
-              url="/about"
-            >
-              Learn more about me
-            </MoreButton>
-          </Button>
-        </ButtonContainer>
+        >
+          <ButtonContainer>
+            <Button>
+              <MoreButton
+                primary={info.fontColor}
+                secondary={info.background}
+                url="/about"
+              >
+                Learn more about me
+              </MoreButton>
+            </Button>
+          </ButtonContainer>
+        </Section>
       </Container>
     );
   }
