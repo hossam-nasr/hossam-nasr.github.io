@@ -1,10 +1,16 @@
 import React, { Component } from "react";
-import { Container } from "./styles"
+import { Container } from "./styles";
+import Footer from "./../Footer";
 
 class ContentContainer extends Component {
-    render() {
-        return <Container>{this.props.children}</Container>
-    }
+  render() {
+    return (
+      <Container>
+        {this.props.children}
+        <Footer />
+      </Container>
+    );
+  }
 }
 
-export default ContentContainer
+export default ContentContainer;
