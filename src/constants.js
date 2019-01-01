@@ -140,8 +140,11 @@ export const projects = {
   page: {
     title: "Projects!",
     subtitle: "Project showcase",
+    subsubtitle: "Computer Science is my passion. I started coding when I was 9 and haven't stopped since. Here are some of the projects I've worked on!",
     background: "background.secondary",
     fontColor: "primary",
+    projectBackground: "background.tertiary",
+    projectFontColor: 'tertiary',
     allProjects: [
       {
         title: "LightSource",
