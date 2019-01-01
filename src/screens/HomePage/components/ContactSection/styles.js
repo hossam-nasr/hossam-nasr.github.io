@@ -8,6 +8,7 @@ export const Container = styled(Flex)`
   justify-content: flex-start;
   background-color: ${props => themeGet(`colors.${props.background}`, "gray")};
   color: ${props => themeGet(`colors.${props.fontcolor}`, "white")};
+  padding-bottom: 35px;
 `;
 
 export const StyledLink = styled.a`
