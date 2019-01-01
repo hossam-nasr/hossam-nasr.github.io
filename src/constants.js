@@ -136,6 +136,49 @@ export const projects = {
         description: "I built this site using React!"
       }
     ]
+  },
+  page: {
+    title: "Projects!",
+    subtitle: "Project showcase",
+    background: "background.secondary",
+    fontColor: "primary",
+    allProjects: [
+      {
+        title: "LightSource",
+        key: "lightsource",
+        pic: lightSourceLogo,
+        background: "black",
+        summary: "I developed this infinite clicker game from scratch!"
+      },
+      {
+        title: "The Key",
+        key: "thekey",
+        pic: theKeyLogo,
+        background: "white",
+        summary: "I worked on this iOS and Android app with HSA Dev!"
+      },
+      {
+        title: "This Site!",
+        key: "personalsite",
+        pic: personalSiteLogo,
+        background: "transparent",
+        summary: "I built this site using React!"
+      },
+      {
+        title: "Forms4Friends",
+        key: "f4f",
+        pic: personalSiteLogo,
+        background: "transparent",
+        summary: "I worked on this project as part of the Harvard Code for Life Hackathon"
+      },
+      {
+        title: "Converge",
+        key: "converge",
+        pic: personalSiteLogo,
+        background: "transparent",
+        summary: "I worked on this project as part of YHack 2017"
+      }
+    ]
   }
 };
 
