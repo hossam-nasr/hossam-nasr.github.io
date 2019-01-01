@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NavigationBar from "./../../components/NavigationBar";
 import ContentContainer from "./../../components/ContentContainer";
+import Title from "./../../components/Title"
 
 class AboutPage extends Component {
   render() {
@@ -8,7 +9,7 @@ class AboutPage extends Component {
       <div>
         <NavigationBar page="About" />
         <ContentContainer>
-          <h1>this is the About Page!</h1>
+          <Title>This is the About Page!</Title>
         </ContentContainer>
       </div>
     );
