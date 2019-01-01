@@ -5,7 +5,7 @@ import Section from "./../../../../components/Section";
 
 class AboutMeSection extends Component {
   render() {
-    const { info, contacts, socials } = this.props;
+    const { info, contacts } = this.props;
     const contactLinks = contacts.map(contact => (
       <ContactContent key={contact.key}>
         <FontAwesomeIcon icon={contact.icon} fixedWidth />
