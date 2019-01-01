@@ -25,7 +25,10 @@ export const Item = styled.li`
   @media all and (max-width: 500px) {
     display: block;
     text-align: center;
-    padding: 0px 10px 10px 10px;
-    border-top: 1px solid ${themeGet("colors.navigation.border", "gray")};
+    padding: ${props => (props.menu ? "0px 10px 10px 10px" : "0")};
+    border-top: ${props =>
+      props.menu
+        ? `1px solid ${themeGet("colors.navigation.border", "gray")}`
+        : "0px"};
   }
 `;

@@ -11,7 +11,8 @@ const theme = {
     background: {
       primary: "#e5e5e5",
       secondary: "#2b2b2b",
-      tertiary: "#bcbcbc",
+      tertiary: '#eaf2ff',
+      quaternary: "#182a47",
       banner: "rgba(0, 0, 0, 0.6)",
       projectBox: "rgba(0,0,0,0.7)"
     },
@@ -21,6 +22,7 @@ const theme = {
   },
   fonts: {
     primary: "Raleway",
+    secondary: 'Damion',
     menu: "Damion",
     greeting: "Damion",
     name: "Raleway, serif",

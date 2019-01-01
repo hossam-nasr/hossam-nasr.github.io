@@ -1,13 +1,7 @@
 import React, { Component } from "react";
-import {
-  Container,
-  Menu,
-  StyledLink,
-  Toggle,
-  Label,
-} from "./styles";
+import { Container, Menu, StyledLink, Toggle, Label } from "./styles";
 import Logo from "./components/Logo";
-import MenuItem from "./components/MenuItem";
+import MenuItem from "./../MenuItem";
 
 class NavigationBar extends Component {
   render() {
@@ -18,21 +12,27 @@ class NavigationBar extends Component {
         <Label htmlFor="menuToggle" />
         <Menu>
           <StyledLink to="/">
-            <MenuItem selected={this.props.page === "Home"}>Home</MenuItem>
+            <MenuItem selected={this.props.page === "Home"} menu>
+              Home
+            </MenuItem>
           </StyledLink>
           <StyledLink to="/about">
-            <MenuItem selected={this.props.page === "About"}>About</MenuItem>
+            <MenuItem selected={this.props.page === "About"} menu>
+              About
+            </MenuItem>
           </StyledLink>
           <StyledLink to="/projects">
-            <MenuItem selected={this.props.page === "Projects"}>
+            <MenuItem selected={this.props.page === "Projects"} menu>
               Projects
             </MenuItem>
           </StyledLink>
           <StyledLink to="/resume">
-            <MenuItem selected={this.props.page === "Resume"}>Resume</MenuItem>
+            <MenuItem selected={this.props.page === "Resume"} menu>
+              Resume
+            </MenuItem>
           </StyledLink>
           <StyledLink to="/contact">
-            <MenuItem selected={this.props.page === "Contact"}>
+            <MenuItem selected={this.props.page === "Contact"} menu>
               Contact
             </MenuItem>
           </StyledLink>

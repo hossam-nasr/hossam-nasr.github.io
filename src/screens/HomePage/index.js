@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import NavigationBar from "./../../components/NavigationBar";
 import ContentContainer from "./../../components/ContentContainer";
+import Footer from "./../../components/Footer";
 import Section from "./components/Section";
 import GreetingBanner from "./components/GreetingBanner";
 import ProjectsShowcase from "./components/ProjectsShowcase";
@@ -30,6 +31,7 @@ class HomePage extends Component {
           />
           <ProjectsShowcase projects={projects.section.summaryProjects} />
           <AboutMeSection info={AboutMe.section} />
+          <Footer/>
         </ContentContainer>
       </div>
     );
