@@ -6,7 +6,14 @@ import Section from "./../../components/Section";
 import GreetingBanner from "./components/GreetingBanner";
 import ProjectsShowcase from "./components/ProjectsShowcase";
 import AboutMeSection from "./components/AboutMeSection";
-import { SWE, projects, AboutMe } from "./../../constants.js";
+import ContactSection from "./components/ContactSection";
+import {
+  SWE,
+  projects,
+  AboutMe,
+  contactInfo,
+  contactSection
+} from "./../../constants.js";
 
 class HomePage extends Component {
   render() {
@@ -31,7 +38,11 @@ class HomePage extends Component {
           />
           <ProjectsShowcase projects={projects.section.summaryProjects} />
           <AboutMeSection info={AboutMe.section} />
-          <Footer/>
+          <ContactSection
+            info={contactSection.section}
+            contacts={contactInfo}
+          />
+          <Footer />
         </ContentContainer>
       </div>
     );

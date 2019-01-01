@@ -8,12 +8,14 @@ import {
   faInstagram,
   faGithub,
   faHackerrank,
-  faSteam,
+  faSteam
 } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
+import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
 
 export const greeting = "Hello World, I'm";
 
-export const footerGreeting = "Thanks for visiting my site. Find me elsewhere!"
+export const footerGreeting = "Thanks for visiting my site!";
 
 export const descriptions = [
   "student",
@@ -112,16 +114,54 @@ export const socialLinks = [
   },
   {
     name: "HackerRank",
-    key: 'hr',
-    url: 'https://www.hackerrank.com/hossamnasr',
+    key: "hr",
+    url: "https://www.hackerrank.com/hossamnasr",
     icon: faHackerrank,
-    handle: 'hossamnasr'
-  }, 
+    handle: "hossamnasr"
+  },
   {
     name: "Steam",
-    key: 'st',
-    url: 'https://steamcommunity.com/id/hossoawesome/',
+    key: "st",
+    url: "https://steamcommunity.com/id/hossoawesome/",
     icon: faSteam,
-    handle: 'hossoawesome',
+    handle: "hossoawesome"
   }
 ];
+
+export const contactInfo = [
+  {
+    name: "Email",
+    key: "em",
+    content: "h_mabed@college.harvard.edu",
+    url: "mailto:h_mabed@college.harvard.edu?subject=Hi%20Hossam!",
+    icon: faEnvelope
+  },
+  {
+    name: "Location",
+    key: "loc",
+    content: "Cambridge, Massachusetts",
+    icon: faMapMarkerAlt
+  },
+  {
+    name: "Phone Number",
+    key: "phone",
+    content: "+1 617-852-5114",
+    icon: faPhone
+  },
+  {
+    name: "LinkedIn",
+    key: "li",
+    content: "linked.com/in/hossam-mabed",
+    url: "https://www.linkedin.com/in/hossam-mabed",
+    icon: faLinkedinIn
+  }
+];
+
+export const contactSection = {
+  section: {
+    title: "Contact me!",
+    subtitle: "Let's get in touch...",
+    background: "background.secondary",
+    fontColor: "primary"
+  }
+};

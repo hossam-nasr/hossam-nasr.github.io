@@ -17,7 +17,7 @@ export const SubContainer = styled(Flex)`
   font-family: ${themeGet("fonts.secondary")};
   font-size: 40px;
   @media all and (max-width: 500px) {
-      font-size: 24px
+      font-size: 20px;
   }
   color: ${props => themeGet("colors.primary", "white")};
   margin-top: 2vh;

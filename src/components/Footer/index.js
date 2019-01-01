@@ -15,7 +15,7 @@ class Footer extends Component {
     const links = socialLinks.map(link => (
       <StyledLink key={link.key} href={link.url} target="_blank">
         <MenuItem menu={false}>
-          <FontAwesomeIcon icon={link.icon} size="xsm" fixedWidth />
+          <FontAwesomeIcon icon={link.icon} fixedWidth />
         </MenuItem>
       </StyledLink>
     ));
