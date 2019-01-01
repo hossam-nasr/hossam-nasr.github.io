@@ -8,7 +8,8 @@ import {
   faInstagram,
   faGithub,
   faHackerrank,
-  faSteam
+  faSteam,
+  faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
@@ -26,6 +27,9 @@ export const descriptions = [
   "CCC"
 ];
 
+export const biography =
+  "I was born in Mansoura, Egypt, to a middle class Egyptian family. I grew up and lived most of my life in Mansoura. I discovered my passion for Computer Science at a very young age, and have been coding ever since! When I was 10, I also got to witness one of the most influencial moments of my life: the January 25th, 2011 Revolution during the Arab Spring. It sparked within me a dream: to make a change; to leave the world better than I entered it. I left Mansoura and moved to Cairo to pursue high school in Cairo. During high school, I was set on continuing higher education abroad in the US. I did Model UN, was a Teaching Assistant for IGCSE ICT, and became the president of the EducationUSA Competitive College Club. On March 30th, 2017, my three-year-old dream came true when I received my acceptance letter to join the Harvard class of 2021. It has only made my dreams and ambitions grow stronger and bigger.";
+
 export const SWE = {
   title: "Computer Science!",
   subtitle:
@@ -37,10 +41,69 @@ export const SWE = {
 export const AboutMe = {
   section: {
     title: "A little about me!",
-    subtitle:
-      "I was born in Mansoura, Egypt, to a middle class Egyptian family. I grew up and lived most of my life in Mansoura. I discovered my passion for Computer Science at a very young age, and have been coding ever since! When I was 10, I also got to witness one of the most influencial moments of my life: the January 25th, 2011 Revolution during the Arab Spring. It sparked within me a dream: to make a change; to leave the world better than I entered it. I left Mansoura and moved to Cairo to pursue high school in Cairo. During high school, I was set on continuing higher education abroad in the US. I did Model UN, was a Teaching Assistant for IGCSE ICT, and became the president of the EducationUSA Competitive College Club. On March 30th, 2017, my three-year-old dream came true when I received my acceptance letter to join the Harvard class of 2021. It has only made my dreams and ambitions grow stronger and bigger.",
+    subtitle: biography,
     background: "background.tertiary",
     fontColor: "tertiary"
+  },
+  page: {
+    title: "A little about me!",
+    sections: [
+      {
+        title: "Biography",
+        subtitle: "A small journey through my life...",
+        background: "background.primary",
+        fontColor: "secondary",
+        content: [
+          {
+            type: "text",
+            payload: biography
+          }
+        ]
+      },
+      {
+        title: "TEDx",
+        subtitle: "",
+        background: "background.secondary",
+        fontColor: "primary",
+        content: [
+          {
+            type: "subtitle",
+            payload: "Speaker"
+          },
+          {
+            type: "text",
+            payload:
+              "I gave a TEDx Talk during TEDxYouth@ISEE 2017, in which I talked about the philosophy of the self. I start asking rhetorical questions to find answers for what ultimately defines us as human beings. You can watch it here:"
+          },
+          {
+            type: "video",
+            payload: "https://www.youtube.com/embed/ZBOfB6iM1z8"
+          },
+          {
+            type: "subtitle",
+            payload: "Organizer"
+          },
+          {
+            type: "text",
+            payload:
+              "I was an organizer for TEDx. I founded and organized the first ever TEDxYouth event at my school, TEDxYouth@EBIS, which is now in its current generation. Check it out below!"
+          },
+          {
+            type: "link",
+            payload: "Watch the videos here!",
+            url:
+              "https://www.youtube.com/playlist?list=PLsRNoUx8w3rPZnyPPRfG4v8oeuTz-c1eZ",
+            icon: faYoutube
+          },
+          {
+            type: "link",
+            payload: "Check out our Facebook Page!",
+            url: "https://www.facebook.com/TEDxYouthEBIS/",
+            icon: faFacebookF
+          }
+        ]
+      }
+    ]
   }
 };
 
