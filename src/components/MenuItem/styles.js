@@ -26,6 +26,7 @@ export const Item = styled.li`
     display: block;
     text-align: center;
     padding: ${props => (props.menu ? "0px 10px 10px 10px" : "0")};
+    border-top: 1px solid ${themeGet("colors.navigation.border", "gray")};
     border-top: ${props =>
       props.menu
         ? `1px solid ${themeGet("colors.navigation.border", "gray")}`
