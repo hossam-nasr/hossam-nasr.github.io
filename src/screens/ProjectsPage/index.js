@@ -19,9 +19,8 @@ class ProjectsPage extends Component {
     );
 
     const boxes = page.allProjects.map(project => (
-      <BoxContainer>
+      <BoxContainer key={project.key}>
         <ProjectBox
-          key={project.key}
           url={project.key}
           pic={project.pic}
           title={project.title}
@@ -48,7 +47,9 @@ class ProjectsPage extends Component {
         subtitle={projectData.summary}
         background={page.projectBackground}
         fontColor={page.projectFontColor}
-        content={["hi"]}
+        content={projectData.content}
+        description={projectData.description}
+        role={projectData.role}
       />
     ) : (
       projectsDisplay

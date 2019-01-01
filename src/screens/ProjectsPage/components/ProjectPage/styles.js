@@ -22,7 +22,7 @@ export const TextContainer = styled.div`
   font-size: 1.4vmax;
   line-height: 5vmin;
   color: inherit;
-  margin: 1vh 5vw 5vh 5vw;
+  margin: 1vh 5vw 2vh 5vw;
   @media all and (max-width: 500px) {
     -webkit-column-count: 1;
     -moz-column-count: 1;
@@ -33,12 +33,13 @@ export const TextContainer = styled.div`
 `;
 
 export const SubtitleContainer = styled.div`
-  font-size: 3vmax;
+  font-size: 2.3vmax;
   font-family: ${themeGet("fonts.primary", "sans-serif")};
   @media all and (max-width: 500px) {
     font-size: 4vmax;
   }
   margin: 1vh 5vw 2vh 5vw;
+  text-align: center;
 `;
 
 export const VideoContainer = styled(Flex)`
@@ -55,6 +56,7 @@ export const SectionContentContainer = styled(Flex)`
   flex-flow: column nowrap;
   background-color: ${props => themeGet(`colors.${props.background}`, "black")};
   color: ${props => themeGet(`colors.${props.fontcolor}`, "white")};
+  padding-bottom: 35px;
 `;
 
 export const StyledLink = styled.a`

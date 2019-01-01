@@ -15,15 +15,15 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 class AboutPage extends Component {
-  renderContent = content => {
+  renderContent = (content, id) => {
     switch (content.type) {
       case "text":
-        return <TextContainer>{content.payload}</TextContainer>;
+        return <TextContainer key={id}>{content.payload}</TextContainer>;
       case "subtitle":
-        return <SubtitleContainer>{content.payload}</SubtitleContainer>;
+        return <SubtitleContainer key={id}>{content.payload}</SubtitleContainer>;
       case "video":
         return (
-          <VideoContainer>
+          <VideoContainer key={id}>
             <Video
               src={content.payload}
               frameBorder="0"
@@ -37,7 +37,7 @@ class AboutPage extends Component {
         );
       case "link":
         return (
-          <StyledLink href={content.url}>
+          <StyledLink key={id} href={content.url}>
             <TextContainer>
               <FontAwesomeIcon icon={content.icon} fixedWidth />
               {` ${content.payload} `}
@@ -45,7 +45,7 @@ class AboutPage extends Component {
           </StyledLink>
         );
       default:
-        return <TextContainer>{content.payload}</TextContainer>;
+        return <TextContainer key={id}>{content.payload}</TextContainer>;
     }
   };
 

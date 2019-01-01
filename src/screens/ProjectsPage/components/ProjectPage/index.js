@@ -11,15 +11,17 @@ import {
 } from "./styles";
 
 class ProjectPage extends Component {
-  renderContent = content => {
+  renderContent = (content, id) => {
     switch (content.type) {
       case "text":
-        return <TextContainer>{content.payload}</TextContainer>;
+        return <TextContainer key={id}>{content.payload}</TextContainer>;
       case "subtitle":
-        return <SubtitleContainer>{content.payload}</SubtitleContainer>;
+        return (
+          <SubtitleContainer key={id}>{content.payload}</SubtitleContainer>
+        );
       case "video":
         return (
-          <VideoContainer>
+          <VideoContainer key={id}>
             <Video
               src={content.payload}
               frameBorder="0"
@@ -33,7 +35,7 @@ class ProjectPage extends Component {
         );
       case "link":
         return (
-          <StyledLink href={content.url}>
+          <StyledLink key={id} href={content.url}>
             <TextContainer>
               <FontAwesomeIcon icon={content.icon} fixedWidth />
               {` ${content.payload} `}
@@ -41,7 +43,7 @@ class ProjectPage extends Component {
           </StyledLink>
         );
       default:
-        return <TextContainer>{content.payload}</TextContainer>;
+        return <TextContainer key={id}>{content.payload}</TextContainer>;
     }
   };
 
@@ -59,6 +61,18 @@ class ProjectPage extends Component {
           background={this.props.background}
           fontcolor={this.props.fontColor}
         >
+          <SubtitleContainer>{`About ${this.props.title}`}</SubtitleContainer>
+          <TextContainer>{this.props.description}</TextContainer>
+          {this.props.role ? (
+            <div>
+              <SubtitleContainer>{`About my role in ${
+                this.props.title
+              }`}</SubtitleContainer>
+              <TextContainer>{this.props.role}</TextContainer>
+            </div>
+          ) : (
+            <div />
+          )}
           {contents}
         </SectionContentContainer>
       </Section>

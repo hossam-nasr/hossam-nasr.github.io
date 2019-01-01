@@ -140,46 +140,89 @@ export const projects = {
   page: {
     title: "Projects!",
     subtitle: "Project showcase",
-    subsubtitle: "Computer Science is my passion. I started coding when I was 9 and haven't stopped since. Here are some of the projects I've worked on!",
+    subsubtitle:
+      "Computer Science is my passion. I started coding when I was 9 and haven't stopped since. Here are some of the projects I've worked on!",
     background: "background.secondary",
     fontColor: "primary",
     projectBackground: "background.tertiary",
-    projectFontColor: 'tertiary',
+    projectFontColor: "tertiary",
     allProjects: [
       {
         title: "LightSource",
         key: "lightsource",
         pic: lightSourceLogo,
         background: "black",
-        summary: "I developed this infinite clicker game from scratch!"
+        summary: "I developed this infinite clicker game from scratch!",
+        description:
+          'LightSource is a game I created entirely from scratch using JavaScript, PHP, HTML, CSS, and SQL. It is an "infinite clicker" game with one simple premise: click on your LightSource to produce photons. You start with a simple tiny Electromagnetic Field which produces only one photon per click, but as you keep clicking, you can collect enough photons to buy better LightSources with more photons per click. You can choose from 13 different LightSources ranging from a candle, to a street lamp, to a Lightsaber, even to the Sun. Buying a certain LightSource also unlocks the ability to buy its "Auto Sources," which produce a certain number of photons per second. You can buy as many Auto Sources as you want, and at certain milestones you earn different medals. The objective of the game is to collect as many medals as possible and rise to the top of the global Leaderboards. The game also includes an extensive transactions log with all your photon expenditure and a customized profile showcasing all your medals and interesting statistics such as the total number of photons spent. The following trailer was my first ever experience with video editing using Adobe Premiere Pro CC.',
+        content: [
+          {
+            type: "subtitle",
+            payload: "Trailer"
+          },
+          {
+            type: "video",
+            payload: "https://www.youtube.com/embed/zOJZq3b4pbU"
+          }
+        ]
       },
       {
         title: "The Key",
         key: "thekey",
         pic: theKeyLogo,
         background: "white",
-        summary: "I worked on this iOS and Android app with HSA Dev!"
+        summary: "I worked on this iOS and Android app with HSA Dev!",
+        description:
+          "HSA Dev is the only group of Harvard students that run their own web and mobile app development company. The Key Society is the biggest and longest project at HSA Dev. Founded by Zena Edosomwan (’17) and Christian Juzang (’20), two student-athletes of color at Harvard University, The Key Society aims to create a motivated community of Harvard students committed to making networking accessible, genuine, and simple. Members of The Key Society can swipe left and right to connect with one another and search jobs and events posted by companies looking to recruit members. With custom chats and a personalized connection suggestions algorithm, The Key Society is dedicated to using technology to build the most effective networks. The Key Society is built using React Native for the front-end and Postgress/GraphQL for the back-end.",
+        role:
+          "I worked mostly on front-end development for both the iOS and Android apps for The Key 2.0. I worked on developing and enhancing registration flow for both apps, handling Resume Upload for the Android application, user data entry verification, responsive design for the Android build, and bug-testing and debugging for the Android build.",
+        content: []
       },
       {
         title: "This Site!",
         key: "personalsite",
         pic: personalSiteLogo,
         background: "transparent",
-        summary: "I built this site using React!"
+        summary: "I built this site using React!",
+        description:
+          "Stemming from my love for Computer Science and desire to share my skills, I decided to develop this site from scratch in order to share my story, my talents, and my skills. This site is built from scratch using React.js, and incorporating multiple areas of modular design.",
+        content: []
       },
       {
         title: "Forms4Friends",
         key: "f4f",
         pic: personalSiteLogo,
         background: "transparent",
-        summary: "I worked on this project as part of the Harvard Code for Life Hackathon"
+        summary:
+          "I worked on this project as part of the Harvard Code for Life Hackathon",
+        description:
+          "Forms4Friends was a project inspired by a group of three Harvard students to better the lives of disenfranchised victims of abuse. It aims to help people find easy and quick access to legal forms, with support in helping them fill out and file those forms. The project was implemented as part of the Harvard Law School Code for Life Hackathon, and was implemented using React.js",
+        role:
+          "I worked on developing most of the project's front-end base, setting up the core React.js and Routing framework, implementing core logic for form rendering, and other features of responsive design.",
+        content: []
       },
       {
         title: "Converge",
         key: "converge",
         pic: personalSiteLogo,
         background: "transparent",
-        summary: "I worked on this project as part of YHack 2017"
+        summary: "I worked on this project as part of YHack 2017",
+        description:
+          "Converge is a project that aims to help students find meeting points and hang out places in their vicinity. The product uses the Google Maps API to locate points of interest that is almost equidistant from all users and their locations. The product was built using Javascript/jQuery. It was submitted as part of the Yale Hackathon YHack 2017.",
+        role:
+          "I had an important role in both the front-end and the back-end implementation of this project. I implemented most of the front-end design, and the HTML/CSS involved. Furthermore, I implemented the API calls and the core functional logic of the project in order to query the user for input, parse it, and output the proper areas of interest. I implemented the algorithm used to find the closest point of interest among all the user input locations.",
+        content: []
+      },
+      {
+        title: "ToDo List",
+        key: "todo",
+        pic: personalSiteLogo,
+        background: "transparent",
+        summary:
+          "I created this project as part of an onboarding process for HSA Dev.",
+        description:
+          "This project is a simple to-do list aimed at organizing tasks and schedules for busy students and businesspeople alike. It was implemented as part of the onboarding process for HSA Dev using React.js and Styled Components.",
+        content: []
       }
     ]
   }
