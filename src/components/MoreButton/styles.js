@@ -48,6 +48,18 @@ export const StyledLink = styled(Link)`
   }
 `;
 
+export const StyledA = styled.a`
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+`;
+
 export const ButtonContent = styled.span`
   cursor: pointer;
   color: ${props => themeGet(`colors.${props.primary}`, "white")};
