@@ -8,7 +8,8 @@ import {
   DashContainerRight,
   Dot,
   Dash,
-  Subtitle
+  Subtitle,
+  ChildrenCotainer
 } from "./styles";
 
 class Section extends Component {
@@ -17,7 +18,7 @@ class Section extends Component {
       <Banner background={this.props.background}>
         <TitleContainer>
           <DashContainerLeft>
-          <Dot color={this.props.fontColor} />
+            <Dot color={this.props.fontColor} />
             <Dash color={this.props.fontColor} />
           </DashContainerLeft>
           <Title fontColor={this.props.fontColor}>{this.props.title}</Title>
@@ -34,7 +35,7 @@ class Section extends Component {
             {this.props.subtitle}
           </Subtitle>
         </SubtitleContainer>
-        {this.props.children}
+        <ChildrenCotainer>{this.props.children}</ChildrenCotainer>
       </Banner>
     );
   }
