@@ -93,3 +93,7 @@ export const SubtitleContainer = styled(Flex)`
   width: 100%;
   position: block;
 `;
+
+export const ChildrenCotainer = styled.div`
+  width: 100%;
+`;
