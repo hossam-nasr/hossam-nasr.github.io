@@ -8,7 +8,7 @@ export const Container = styled.nav`
   flex-flow: row nowrap;
   justify-content: space-between;
   background-color: ${themeGet("colors.navigation.background", "black")};
-  box-shadow: 0px 2px 20px 2px ${themeGet('colors.navigation.shadow', 'gray')};
+  box-shadow: 0px 2px 20px 2px ${themeGet("colors.navigation.shadow", "gray")};
   position: fixed;
   z-index: 2;
 
@@ -77,21 +77,25 @@ export const Label = styled.label`
 
   background: linear-gradient(
     to bottom,
-    ${themeGet("colors.navigation.menu", "gray")} 0%,
+    transparent 0%,
+    transparent 10%,
+    ${themeGet("colors.navigation.menu", "gray")} 10%,
     ${themeGet("colors.navigation.menu", "gray")} 20%,
     transparent 20%,
-    transparent 40%,
-    ${themeGet("colors.navigation.menu", "gray")} 40%,
-    ${themeGet("colors.navigation.menu", "gray")} 60%,
-    transparent 60%,
+    transparent 45%,
+    ${themeGet("colors.navigation.menu", "gray")} 45%,
+    ${themeGet("colors.navigation.menu", "gray")} 55%,
+    transparent 55%,
     transparent 80%,
     ${themeGet("colors.navigation.menu", "gray")} 80%,
-    ${themeGet("colors.navigation.menu", "gray")} 100%
+    ${themeGet("colors.navigation.menu", "gray")} 90%,
+    transparent 90%,
+    transparent 100%
   );
   cursor: pointer;
   float: right;
   height: 35px;
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-right: 1em;
   width: 35px;
 
