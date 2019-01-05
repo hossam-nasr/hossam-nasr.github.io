@@ -20,7 +20,9 @@ class AboutPage extends Component {
       case "text":
         return <TextContainer key={id}>{content.payload}</TextContainer>;
       case "subtitle":
-        return <SubtitleContainer key={id}>{content.payload}</SubtitleContainer>;
+        return (
+          <SubtitleContainer key={id}>{content.payload}</SubtitleContainer>
+        );
       case "video":
         return (
           <VideoContainer key={id}>
@@ -49,10 +51,11 @@ class AboutPage extends Component {
     }
   };
 
-  renderSection = section => {
+  renderSection = (section, id) => {
     const contents = section.content.map(this.renderContent);
     return (
       <Section
+        key={id}
         title={section.title}
         subtitle={section.subtitle}
         background={section.background}
