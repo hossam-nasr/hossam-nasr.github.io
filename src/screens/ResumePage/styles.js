@@ -13,7 +13,7 @@ export const SectionContentContainer = styled(Flex)`
 `;
 
 export const ButtonContainer = styled.div`
-  width: 25%;
+  width: 30%;
   text-align: center;
   margin-bottom: 35px;
   margin-top: 35px;
