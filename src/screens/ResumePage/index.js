@@ -104,7 +104,7 @@ class ResumePage extends Component {
     );
     return (
       <div>
-        <NavigationBar page="Projects" />
+        <NavigationBar page="Resume" />
         <ContentContainer>
           <Title>{resume.title}</Title>
           <Section
