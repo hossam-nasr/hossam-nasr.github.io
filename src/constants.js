@@ -1,6 +1,7 @@
 import lightSourceLogo from "./images/lightsourcelogo.png";
 import theKeyLogo from "./images/thekeylogo.png";
 import personalSiteLogo from "./images/logo.png";
+import templateLogo from "./images/template_logo.png";
 import {
   faFacebookF,
   faTwitter,
@@ -191,7 +192,7 @@ export const projects = {
       {
         title: "Forms4Friends",
         key: "f4f",
-        pic: personalSiteLogo,
+        pic: templateLogo,
         background: "transparent",
         summary:
           "I worked on this project as part of the Harvard Code for Life Hackathon",
@@ -204,7 +205,7 @@ export const projects = {
       {
         title: "Converge",
         key: "converge",
-        pic: personalSiteLogo,
+        pic: templateLogo,
         background: "transparent",
         summary: "I worked on this project as part of YHack 2017",
         description:
@@ -216,7 +217,7 @@ export const projects = {
       {
         title: "ToDo List",
         key: "todo",
-        pic: personalSiteLogo,
+        pic: templateLogo,
         background: "transparent",
         summary:
           "I created this project as part of an onboarding process for HSA Dev.",
