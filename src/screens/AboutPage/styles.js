@@ -20,6 +20,7 @@ export const TextContainer = styled.div`
 
 export const SubtitleContainer = styled.div`
   font-size: 3vmax;
+  text-align: center;
   font-family: ${themeGet("fonts.primary", "sans-serif")};
   @media all and (max-width: 500px) {
     font-size: 4vmax;
