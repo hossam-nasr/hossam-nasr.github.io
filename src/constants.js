@@ -238,6 +238,7 @@ export const resume = {
     education: [
       {
         title: "Harvard University",
+        key: "harvard",
         location: "Cambridge, MA",
         start: "08/2017",
         end: "05/2021",
@@ -247,13 +248,14 @@ export const resume = {
         gpa: "3.919",
         abroad: {
           description:
-            "Study Abroad in Trento, Italy, doing coursework in Mind, Brain and Behavior.",
+            "Harvard Summer School Study Abroad Program in Trento, Italy, doing coursework in Mind, Brain and Behavior.",
           start: "06/2018",
           end: "08/2018"
         }
       },
       {
         title: "Egypt British International School",
+        key: "ebis",
         location: "Cairo, Egypt",
         start: "09/2014",
         end: "06/2017",
@@ -290,6 +292,7 @@ export const resume = {
     leadership: [
       {
         title: "Harvard Student Agencies DEV",
+        key: "dev",
         position: "Junior Engineer",
         location: "Cambridge, MA",
         start: "10/2018",
@@ -299,7 +302,8 @@ export const resume = {
         ]
       },
       {
-        title: "Harvard Political Review",
+        title: "Harvard Political Review (Tech Team)",
+        key: "hpr",
         position: "Senior Engineer",
         location: "Cambridge, MA",
         start: "04/2018",
@@ -310,6 +314,7 @@ export const resume = {
       },
       {
         title: "International Relations Council",
+        key: "irc",
         position: "Travelling Member, ICMUN; Director of Cabinet of Syria",
         location: "Cambridge, MA",
         start: "01/2018",
@@ -322,6 +327,7 @@ export const resume = {
       },
       {
         title: "Harvard College Palestine Solidarity Committee",
+        key: "psc",
         position: "Vice President",
         location: "Cambridge, MA",
         start: "10/2017",
@@ -332,6 +338,7 @@ export const resume = {
       },
       {
         title: "Harvard College Cybersecurity Club",
+        key: "hc3",
         position: "Active Member",
         location: "Cambridge, MA",
         start: "09/2017",
@@ -342,6 +349,7 @@ export const resume = {
       },
       {
         title: "TEDxYouth@EBIS",
+        key: "tedx",
         position: "Founder and Co-Chairman",
         location: "Cairo, Egypt",
         start: "02/2017",
@@ -354,6 +362,7 @@ export const resume = {
       },
       {
         title: "EducationUSA Competitive College Club Cairo",
+        key: "ccc",
         position: "President",
         location: "Cairo, Egypt",
         start: "01/2017",
@@ -477,5 +486,12 @@ export const contactSection = {
     subtitle: "Let's get in touch...",
     background: "background.secondary",
     fontColor: "primary"
+  },
+  page: {
+    title: "Contact Me!",
+    subtitle: "Let's get in touch...",
+    socialIntro: "Or Find Me on Social Media:",
+    background: "background.primary",
+    fontColor: "secondary"
   }
 };
