@@ -43,6 +43,7 @@ export const Subtitle = styled.div`
 export const ContactContent = styled.div`
   font-size: 1.5vmax;
   font-family: ${themeGet("fonts.primary", "sans-serif")};
+  text-align: center;
   @media all and (max-width: 500px) {
     font-size: 2.5vmax;
   }
