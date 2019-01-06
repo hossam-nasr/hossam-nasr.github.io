@@ -12,7 +12,9 @@ import {
   DetailsContainer,
   Details,
   DetailsTitle,
+  DetailsHidden,
   InlineDetails,
+  DetailsMenu,
   DetailsRight
 } from "./styles";
 
@@ -22,11 +24,15 @@ class ResumePage extends Component {
       <DetailsContainer key={education.key}>
         <InlineDetails>
           <DetailsTitle>{education.title}</DetailsTitle>
-          <DetailsRight>{education.location}</DetailsRight>
+          <DetailsRight>
+            <DetailsHidden>Location: </DetailsHidden>{education.location}
+          </DetailsRight>
         </InlineDetails>
         <InlineDetails>
           <Details>{education.description}</Details>
-          <DetailsRight>{education.end}</DetailsRight>
+          <DetailsRight>
+            <DetailsHidden>Graduation: </DetailsHidden>{education.end}
+          </DetailsRight>
         </InlineDetails>
         {education.gpa && (
           <Details>
@@ -44,7 +50,8 @@ class ResumePage extends Component {
               <b>Study Abroad</b>: {education.abroad.description}
             </Details>
             <DetailsRight>
-              {education.abroad.start} - {education.abroad.end}
+              <DetailsHidden>Duration: </DetailsHidden>{education.abroad.start}{" "}
+              - {education.abroad.end}
             </DetailsRight>
           </InlineDetails>
         )}
@@ -69,22 +76,25 @@ class ResumePage extends Component {
       <DetailsContainer key={leader.key}>
         <InlineDetails>
           <DetailsTitle>{leader.title}</DetailsTitle>
-          <DetailsRight>{leader.location}</DetailsRight>
+          <DetailsRight>
+            <DetailsHidden>Location: </DetailsHidden>{leader.location}
+          </DetailsRight>
         </InlineDetails>
         <InlineDetails>
           <Details>
-            <b>{leader.position}</b>
+            <DetailsHidden>Position: </DetailsHidden>{leader.position}
           </Details>
           <DetailsRight>
-            {leader.start} - {leader.current ? "Present" : leader.end}
+            <DetailsHidden>Duration: </DetailsHidden>{leader.start} -{" "}
+            {leader.current ? "Present" : leader.end}
           </DetailsRight>
         </InlineDetails>
         <Details>
-          <ul>
+          <DetailsMenu>
             {leader.description.map((content, id) => (
               <li key={id}>{content}</li>
             ))}
-          </ul>
+          </DetailsMenu>
         </Details>
       </DetailsContainer>
     ));
