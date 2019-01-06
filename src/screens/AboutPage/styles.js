@@ -25,7 +25,7 @@ export const SubtitleContainer = styled.div`
   @media all and (max-width: 500px) {
     font-size: 4vmax;
   }
-  margin: 1vh 5vw 2vh 5vw;
+  margin: 3vh 5vw 2vh 5vw;
 `;
 
 export const VideoContainer = styled(Flex)`

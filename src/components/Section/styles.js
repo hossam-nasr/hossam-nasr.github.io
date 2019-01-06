@@ -14,7 +14,7 @@ export const Title = styled.div`
   font-family: ${themeGet("fonts.title")};
   font-size: 4vmax;
   color: ${props => themeGet(`colors.${props.fontColor}`, "black")};
-  margin: 1vh 4vw 4vh 4vw;
+  margin: 1vh 4vw 0vh 4vw;
   flex-shrink: 0;
   @media all and (max-width: 500px) {
     font-size: 5vmax;
@@ -27,7 +27,7 @@ export const Subtitle = styled.div`
   font-size: 1.4vmax;
   line-height: 5vmin;
   color: ${props => themeGet(`colors.${props.fontColor}`, "black")};
-  margin: 1vh 5vw 5vh 5vw;
+  margin: 4vh 5vw 5vh 5vw;
   -webkit-column-count: ${props => (props.columns ? 2 : 1)};
   -moz-column-count: ${props => (props.columns ? 2 : 1)};
   column-count: ${props => (props.columns ? 2 : 1)};

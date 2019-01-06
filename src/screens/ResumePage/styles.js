@@ -16,7 +16,6 @@ export const ButtonContainer = styled.div`
   width: 340px;
   text-align: center;
   margin-bottom: 35px;
-  margin-top: 35px;
 `;
 
 export const Subtitle = styled.div`

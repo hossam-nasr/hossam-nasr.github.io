@@ -100,7 +100,7 @@ class ResumePage extends Component {
     ));
 
     const skillsDetails = (
-      <DetailsContainer>
+      <DetailsContainer style={{marginBottom: '35px'}}>
         <Details>
           <b>Languages</b>:{" "}
           {resume.data.skills.languages

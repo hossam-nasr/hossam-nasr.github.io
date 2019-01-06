@@ -36,7 +36,7 @@ export const Subtitle = styled.div`
   @media all and (max-width: 500px) {
     font-size: 4vmax;
   }
-  margin: 1vh 5vw 2.5vh 5vw;
+  margin: 2.5vh 5vw 2.5vh 5vw;
   text-align: center;
 `;
 

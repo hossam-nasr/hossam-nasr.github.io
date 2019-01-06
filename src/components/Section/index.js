@@ -27,14 +27,16 @@ class Section extends Component {
             <Dot color={this.props.fontColor} />
           </DashContainerRight>
         </TitleContainer>
-        <SubtitleContainer>
-          <Subtitle
-            columns={this.props.columns}
-            fontColor={this.props.fontColor}
-          >
-            {this.props.subtitle}
-          </Subtitle>
-        </SubtitleContainer>
+        {this.props.subtitle && (
+          <SubtitleContainer>
+            <Subtitle
+              columns={this.props.columns}
+              fontColor={this.props.fontColor}
+            >
+              {this.props.subtitle}
+            </Subtitle>
+          </SubtitleContainer>
+        )}
         <ChildrenCotainer>{this.props.children}</ChildrenCotainer>
       </Banner>
     );
