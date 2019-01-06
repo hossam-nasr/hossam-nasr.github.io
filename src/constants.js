@@ -90,17 +90,23 @@ export const AboutMe = {
               "I was an organizer for TEDx. I founded and organized the first ever TEDxYouth event at my school, TEDxYouth@EBIS, which is now in its current generation. Check it out below!"
           },
           {
-            type: "link",
-            payload: "Watch the videos here!",
-            url:
-              "https://www.youtube.com/playlist?list=PLsRNoUx8w3rPZnyPPRfG4v8oeuTz-c1eZ",
-            icon: faYoutube
-          },
-          {
-            type: "link",
-            payload: "Check out our Facebook Page!",
-            url: "https://www.facebook.com/TEDxYouthEBIS/",
-            icon: faFacebookF
+            type: "array",
+            justifyContent: "center",
+            payload: [
+              {
+                type: "link",
+                payload: "Watch the videos here!",
+                url:
+                  "https://www.youtube.com/playlist?list=PLsRNoUx8w3rPZnyPPRfG4v8oeuTz-c1eZ",
+                icon: faYoutube
+              },
+              {
+                type: "link",
+                payload: "Check out our Facebook Page!",
+                url: "https://www.facebook.com/TEDxYouthEBIS/",
+                icon: faFacebookF
+              }
+            ]
           }
         ]
       }

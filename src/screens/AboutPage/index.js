@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Flex } from "grid-styled";
 import NavigationBar from "./../../components/NavigationBar";
 import ContentContainer from "./../../components/ContentContainer";
 import Title from "./../../components/Title";
@@ -45,6 +46,16 @@ class AboutPage extends Component {
               {` ${content.payload} `}
             </TextContainer>
           </StyledLink>
+        );
+      case "array":
+        return (
+          <Flex
+            key={id}
+            justifyContent={content.justifyContent}
+            alignItems={content.alignItems}
+          >
+            {content.payload.map(this.renderContent)}
+          </Flex>
         );
       default:
         return <TextContainer key={id}>{content.payload}</TextContainer>;
