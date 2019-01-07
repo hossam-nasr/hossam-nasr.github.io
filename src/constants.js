@@ -2,6 +2,9 @@ import lightSourceLogo from "./images/lightsourcelogo.png";
 import theKeyLogo from "./images/thekeylogo.png";
 import personalSiteLogo from "./images/logo.png";
 import templateLogo from "./images/template_logo.png";
+import DevLogo from "./images/devlogo.png";
+import TEDxISEE from "./images/TEDxISEE.jpg";
+import TEDxEBIS from "./images/TEDxEBIS.png";
 import {
   faFacebookF,
   faTwitter,
@@ -75,8 +78,43 @@ export const AboutMe = {
             payload: "About HSA Dev"
           },
           {
+            type: "pic",
+            payload: DevLogo,
+            alt: "Dev Logo"
+          },
+          {
             type: "text",
-            payload: "Hi!"
+            payload:
+              'Founded in 2017, HSA Dev is the only group of Harvard students that run their own web and mobile app development company! We are "A group of pioneers, computer freaks, and eclectic creatives united by the shared excitement of the unknown and driven by unstoppable curiosity." HSA Dev is a non-profit firm that gathers some of the best engineers (font-end and back-end), designers (UX/UI and graphic) and creatives that Harvard has to offer.'
+          },
+          {
+            type: "button",
+            payload: "More about HSA Dev!",
+            href: "https://www.dev.hsa.net/",
+            target: "_blank",
+            primary: "tertiary",
+            secondary: "background.tertiary"
+          },
+          {
+            type: "subtitle",
+            payload: "My role in HSA Dev"
+          },
+          {
+            type: "pic",
+            payload: theKeyLogo,
+            alt: "The Key Logo"
+          },
+          {
+            type: "text",
+            payload:
+              "I joined HSA Dev in October 2018 as a Software Engineer. I work as both front-end and back-end Engineer, focusing mostly on front-end. With HSA Dev, I work on both the iOS and Andoird apps for The Key Society, HSA Dev's most ambitious project yet. The Key Society is a start-up founded by two Harvard students, aimed at creating a motivated community of Harvard students committed to making networking accessible, genuine, and simple. On the Key, I worked on registration flow, data validation, responsive design, as well as bug-testing and debugging for both the iOS and Android versions of The Key Society 2.0."
+          },
+          {
+            type: "button",
+            payload: "More About The Key",
+            href: "https://www.dev.hsa.net/portfolio/thekeysociety",
+            primary: "tertiary",
+            secondary: "background.tertiary"
           }
         ]
       },
@@ -91,9 +129,14 @@ export const AboutMe = {
             payload: "Speaker"
           },
           {
+            type: "pic",
+            payload: TEDxISEE,
+            alt: "TEDxYouth@ISEE logo"
+          },
+          {
             type: "text",
             payload:
-              "I gave a TEDx Talk during TEDxYouth@ISEE 2017, in which I talked about the philosophy of the self. I start asking rhetorical questions to find answers for what ultimately defines us as human beings. You can watch it here:"
+              "In my senior year of high school, I gave a TEDx Talk during TEDxYouth@ISEE 2017, hosted in the International School of Elite Education in its second year. During the talk, I spoke about topics related to the philosophy of the self and the minded. I started asking rhetorical questions to find answers for what ultimately defines us as human beings. You can watch it here (the talk is in Arabic):"
           },
           {
             type: "video",
@@ -104,9 +147,18 @@ export const AboutMe = {
             payload: "Organizer"
           },
           {
+            type: "pic",
+            payload: TEDxEBIS,
+            alt: "TEDxYouth@EBIS logo",
+          },
+          {
             type: "text",
             payload:
-              "I was an organizer for TEDx. I founded and organized the first ever TEDxYouth event at my school, TEDxYouth@EBIS, which is now in its current generation. Check it out below!"
+              'Later on in my senior year, I co-founded and led TEDxYouth@EBIS, which was the first TEDx event at my school, Egypt British International School. I led a team of over 50 students over the span of several months to coordinate logistics, fundraising, and speaker recruitment and training for the event. With the theme of "Illuminayion," the first ever TEDxYouth@EBIS took place on July 29, 2017, and drew over 100 attendees. TExYouth@EBIS continued with its second generation event later on September 1, 2018, and the third generation event is currently in the making.'
+          },
+          {
+            type: "text",
+            payload: 'Check out TEDxYouth@EBIS 2017: "Illumination" below:'
           },
           {
             type: "array",

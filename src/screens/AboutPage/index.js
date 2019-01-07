@@ -4,6 +4,7 @@ import NavigationBar from "./../../components/NavigationBar";
 import ContentContainer from "./../../components/ContentContainer";
 import Title from "./../../components/Title";
 import Section from "./../../components/Section";
+import MoreButton from "./../../components/MoreButton";
 import { AboutMe } from "./../../constants.js";
 import {
   TextContainer,
@@ -11,7 +12,9 @@ import {
   VideoContainer,
   Video,
   SectionContentContainer,
-  StyledLink
+  StyledLink,
+  Image,
+  ButtonContainer
 } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -56,6 +59,31 @@ class AboutPage extends Component {
           >
             {content.payload.map(this.renderContent)}
           </Flex>
+        );
+      case "pic":
+        return (
+          <Image
+            key={id}
+            src={content.payload}
+            alt={content.alt}
+            width={content.width}
+            height={content.height}
+          />
+        );
+      case "button":
+        return (
+          <ButtonContainer key={id}>
+            <MoreButton
+              primary={content.primary}
+              secondary={content.secondary}
+              href={content.href}
+              url={content.url}
+              target={content.target}
+              download={content.download}
+            >
+              {content.payload}
+            </MoreButton>
+          </ButtonContainer>
         );
       default:
         return <TextContainer key={id}>{content.payload}</TextContainer>;

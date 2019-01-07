@@ -40,8 +40,10 @@ export const Video = styled.iframe`
 
 export const SectionContentContainer = styled(Flex)`
   flex-flow: column nowrap;
+  align-items: center;
   background-color: ${props => themeGet(`colors.${props.background}`, "black")};
   color: ${props => themeGet(`colors.${props.fontcolor}`, "white")};
+  padding-bottom: 35px;
 `;
 
 export const StyledLink = styled.a`
@@ -65,4 +67,17 @@ export const StyledLink = styled.a`
   :hover {
     color: ${themeGet("colors.navigation.text-highlighted", "white")};
   }
+`;
+
+export const Image = styled.img `
+  padding: 35px;
+  width: 30%;
+  @media all and (max-width: 500px) {
+    width: 80%;
+  }
+`;
+
+export const ButtonContainer = styled.div` 
+  width: 320px;
+  padding-bottom: 10px;
 `;
