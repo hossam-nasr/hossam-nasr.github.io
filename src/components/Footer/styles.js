@@ -17,7 +17,7 @@ export const SubContainer = styled(Flex)`
   font-family: ${themeGet("fonts.secondary")};
   font-size: 40px;
   @media all and (max-width: 500px) {
-      font-size: 20px;
+      font-size: 26px;
   }
   color: ${props => themeGet("colors.primary", "white")};
   margin-top: 2vh;
@@ -30,9 +30,12 @@ export const CopyRightContainer = styled(Flex)`
   justify-content: center;
   align-items: center;
   font-family: ${themeGet("fonts.primary")};
-  font-size: 0.9vmax;
+  font-size: 18px;
   color: ${props => themeGet("colors.primary", "white")};
   margin: 4vh 0vw 1vh 0vw;
+  @media all and (max-width: 500px) {
+    font-size: 12px;
+  }
 `;
 
 export const LinksMenu = styled.ul`
@@ -45,7 +48,7 @@ export const LinksMenu = styled.ul`
   list-style-type: none;
   font-size: 22px; 
   @media all and (max-width: 500px) {
-      font-size: 13px;
+      font-size: 16px;
   }
   background-color: ${themeGet("colors.navigation.background", "black")};
 `;
