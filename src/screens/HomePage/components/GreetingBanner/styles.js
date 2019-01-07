@@ -37,7 +37,7 @@ export const GreetingText = styled.div`
   font-style: italic;
   font-size: 3.2vw;
   @media all and (max-width: 500px) {
-    font-size: 7vw;
+    font-size: 8vw;
   }
 `;
 
@@ -70,7 +70,7 @@ export const NameDot = styled.div`
 `;
 
 export const NameText = styled.div`
-  font-family: ${themeGet("fonts.name", '"Bickham Script", cursive')};
+  font-family: ${themeGet("fonts.name", '"Bickham Script", sans-serif')};
   color: ${themeGet("colors.primary", "white")};
   font-weight: bold;
   letter-spacing: 1vw;
@@ -78,7 +78,7 @@ export const NameText = styled.div`
   margin: 1vh 3vw 4vh 3vw;
   text-align: center;
   @media all and (max-width: 500px) {
-    font-size: 10vw;
+    font-size: 17vw;
   }
 `;
 
@@ -91,7 +91,7 @@ export const DescriptionText = styled.div`
   margin-left: 3vw;
   padding-bottom: 3vh;
   @media all and (max-width: 500px) {
-    font-size: 4.7vw;
+    font-size: 6vw;
   }
 `;
 
