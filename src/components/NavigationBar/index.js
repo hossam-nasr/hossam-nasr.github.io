@@ -1,7 +1,9 @@
 import React, { Component } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Container, Menu, StyledLink, Toggle, Label } from "./styles";
 import Logo from "./components/Logo";
 import MenuItem from "./../MenuItem";
+import { MenuIcon } from "./../../constants";
 
 class NavigationBar extends Component {
   render() {
@@ -9,7 +11,10 @@ class NavigationBar extends Component {
       <Container>
         <Logo />
         <Toggle id="menuToggle" type="checkbox" />
-        <Label htmlFor="menuToggle" />
+        <Label htmlFor="menuToggle">
+          <FontAwesomeIcon icon={MenuIcon.down} className="down" size="2x" />
+          <FontAwesomeIcon icon={MenuIcon.up} className="up" size="2x" />
+        </Label>
         <Menu>
           <StyledLink to="/">
             <MenuItem selected={this.props.page === "Home"} menu>

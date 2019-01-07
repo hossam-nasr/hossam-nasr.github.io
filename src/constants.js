@@ -13,13 +13,23 @@ import {
   faYoutube
 } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-import { faMapMarkerAlt, faPhone } from "@fortawesome/free-solid-svg-icons";
+import {
+  faMapMarkerAlt,
+  faPhone,
+  faCaretDown,
+  faCaretUp
+} from "@fortawesome/free-solid-svg-icons";
 
 export const greeting = "Hello World, I'm";
 
 export const footerGreeting = "Thanks for visiting my site!";
 
 export const descriptions = ["student", "developer", "dreamer"];
+
+export const MenuIcon = {
+  down: faCaretDown,
+  up: faCaretUp
+};
 
 export const biography =
   "I was born in Mansoura, Egypt, to a middle class Egyptian family. I grew up and lived most of my life in Mansoura. I discovered my passion for Computer Science at a very young age, and have been coding ever since! When I was 10, I also got to witness one of the most influencial moments of my life: the January 25th, 2011 Revolution during the Arab Spring. It sparked within me a dream: to make a change; to leave the world better than I entered it. I left Mansoura and moved to Cairo to pursue high school in Cairo. During high school, I was set on continuing higher education abroad in the US. I did Model UN, was a Teaching Assistant for IGCSE ICT, and became the president of the EducationUSA Competitive College Club. On March 30th, 2017, my three-year-old dream came true when I received my acceptance letter to join the Harvard class of 2021. It has only made my dreams and ambitions grow stronger and bigger.";

@@ -42,11 +42,10 @@ export const Menu = styled.ul`
     flex-direction: column;
     align-items: center;
     height: 0;
-    opacity: 0;
+    overflow-y: hidden;
     text-align: center;
     width: 100%;
-    visibility: hidden;
-    transition: all 1s ease;
+    transition: all 0.5s ease;
   }
 `;
 
@@ -64,40 +63,53 @@ export const StyledLink = styled(Link)`
 
 export const Toggle = styled.input`
   :checked ~ ul {
-    opacity: 1;
-    height: 100vh;
-    visibility: visible;
-    transition: all 1s ease;
+    height: 230px;
+    transition: all 0.5 ease;
+  }
+
+  :checked ~ label {
+    .up {
+      transform: rotate(0deg) scale(1);
+      opacity: 1;
+    }
+    .down {
+      transform: rotate(180deg) scale(0.5);
+      opacity: 0;
+    }
   }
   display: none;
 `;
 
 export const Label = styled.label`
   display: none;
-
-  background: linear-gradient(
-    to bottom,
-    transparent 0%,
-    transparent 10%,
-    ${themeGet("colors.navigation.menu", "gray")} 10%,
-    ${themeGet("colors.navigation.menu", "gray")} 20%,
-    transparent 20%,
-    transparent 45%,
-    ${themeGet("colors.navigation.menu", "gray")} 45%,
-    ${themeGet("colors.navigation.menu", "gray")} 55%,
-    transparent 55%,
-    transparent 80%,
-    ${themeGet("colors.navigation.menu", "gray")} 80%,
-    ${themeGet("colors.navigation.menu", "gray")} 90%,
-    transparent 90%,
-    transparent 100%
-  );
+  background: transparent;
+  color: ${themeGet("colors.navigation.menu", "white")};
   cursor: pointer;
   float: right;
   height: 35px;
   margin-top: 0.5em;
   margin-right: 1em;
   width: 35px;
+  position: relative;
+  transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+
+  svg {
+    position: absolute;
+    left: 20%;
+    display: block;
+  }
+
+  .down {
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .up {
+    transition: opacity 0.5s, transform 0.5s;
+    transform: rotate(-180deg) scale(0.5);
+    opacity: 0;
+  }
 
   @media all and (max-width: 500px) {
     display: block;

@@ -23,9 +23,11 @@ export const Item = styled.li`
   }
 
   @media all and (max-width: 500px) {
-    display: block;
-    text-align: center;
-    padding: ${props => (props.menu ? "0px 10px 10px 10px" : "0")};
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: ${props => (props.menu ? "5px 0px 5px 0px" : "0")};
     border-top: 1px solid ${themeGet("colors.navigation.border", "gray")};
     border-top: ${props =>
       props.menu
