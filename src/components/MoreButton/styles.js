@@ -5,13 +5,14 @@ import { Link } from "react-router-dom";
 export const Button = styled.button`
   background-color: transparent;
   cursor: pointer;
-  width: 90%;
+  width: 100%;
   font-family: ${themeGet("fonts.primary")};
   text-align: center;
   font-size: 130%;
   padding: 5%;
   border: 2px solid ${props => themeGet(`colors.${props.primary}`, "white")};
   transition: all 0.5s ease;
+  display: inline-block;
 
   :hover,
   :active,
