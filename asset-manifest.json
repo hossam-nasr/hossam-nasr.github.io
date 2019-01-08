@@ -1,7 +1,7 @@
 {
   "main.css": "/static/css/main.64d49360.chunk.css",
-  "main.js": "/static/js/main.2cb1093a.chunk.js",
-  "main.js.map": "/static/js/main.2cb1093a.chunk.js.map",
+  "main.js": "/static/js/main.f1edfa56.chunk.js",
+  "main.js.map": "/static/js/main.f1edfa56.chunk.js.map",
   "static/js/1.8c5c84b9.chunk.js": "/static/js/1.8c5c84b9.chunk.js",
   "static/js/1.8c5c84b9.chunk.js.map": "/static/js/1.8c5c84b9.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
@@ -17,6 +17,6 @@
   "static/media/TEDxEBIS.png": "/static/media/TEDxEBIS.057999e2.png",
   "static/css/main.64d49360.chunk.css.map": "/static/css/main.64d49360.chunk.css.map",
   "index.html": "/index.html",
-  "precache-manifest.5c92445f0454b630e7c8c8799e0b11e4.js": "/precache-manifest.5c92445f0454b630e7c8c8799e0b11e4.js",
+  "precache-manifest.57f5ad4ffb8eef50b92994d116525e6f.js": "/precache-manifest.57f5ad4ffb8eef50b92994d116525e6f.js",
   "service-worker.js": "/service-worker.js"
 }
