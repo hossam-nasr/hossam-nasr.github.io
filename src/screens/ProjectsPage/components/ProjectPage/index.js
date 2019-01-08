@@ -49,6 +49,31 @@ class ProjectPage extends Component {
             </TextContainer>
           </StyledLink>
         );
+      case "array":
+        return (
+          <Flex
+            key={id}
+            justifyContent={content.justifyContent}
+            alignItems={content.alignItems}
+          >
+            {content.payload.map(this.renderContent)}
+          </Flex>
+        );
+      case "button":
+        return (
+          <ButtonContainer key={id}>
+            <MoreButton
+              primary={this.props.fontColor}
+              secondary={this.props.background}
+              href={content.href}
+              url={content.url}
+              target={content.target}
+              download={content.download}
+            >
+              {content.payload}
+            </MoreButton>
+          </ButtonContainer>
+        );
       default:
         return <TextContainer key={id}>{content.payload}</TextContainer>;
     }
@@ -88,16 +113,18 @@ class ProjectPage extends Component {
             <div>
               <SubtitleContainer>Links</SubtitleContainer>
               <Flex>
-                <ButtonContainer>
-                  <MoreButton
-                    primary={fontColor}
-                    secondary={background}
-                    href={info.url}
-                    target="_blank"
-                  >
-                    {info.title}
-                  </MoreButton>
-                </ButtonContainer>
+                {info.url && (
+                  <ButtonContainer>
+                    <MoreButton
+                      primary={fontColor}
+                      secondary={background}
+                      href={info.url}
+                      target="_blank"
+                    >
+                      {info.title}
+                    </MoreButton>
+                  </ButtonContainer>
+                )}
                 {info.github && (
                   <ButtonContainer>
                     <MoreButton

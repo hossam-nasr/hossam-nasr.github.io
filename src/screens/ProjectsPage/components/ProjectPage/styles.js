@@ -47,6 +47,7 @@ export const VideoContainer = styled(Flex)`
   width: 100%;
   flex-shrink: 1;
 `;
+
 export const Video = styled.iframe`
   width: 50vmax;
   height: 28.125vmax;

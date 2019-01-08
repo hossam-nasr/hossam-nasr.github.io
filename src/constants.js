@@ -214,7 +214,7 @@ export const projects = {
       github: "https://github.com/hossam-nasr/lightsource",
       summary: "I developed this infinite clicker game from scratch!",
       description:
-        'LightSource is a game I created entirely from scratch using JavaScript, PHP, HTML, CSS, and SQL. It is an "infinite clicker" game with one simple premise: click on your LightSource to produce photons. You start with a simple tiny Electromagnetic Field which produces only one photon per click, but as you keep clicking, you can collect enough photons to buy better LightSources with more photons per click. You can choose from 13 different LightSources ranging from a candle, to a street lamp, to a Lightsaber, even to the Sun. Buying a certain LightSource also unlocks the ability to buy its "Auto Sources," which produce a certain number of photons per second. You can buy as many Auto Sources as you want, and at certain milestones you earn different medals. The objective of the game is to collect as many medals as possible and rise to the top of the global Leaderboards. The game also includes an extensive transactions log with all your photon expenditure and a customized profile showcasing all your medals and interesting statistics such as the total number of photons spent. The following trailer was my first ever experience with video editing using Adobe Premiere Pro CC.',
+        'LightSource was my first ever project, a first dive into web development. LightSource is a game I created from scratch using JavaScript, PHP, HTML, CSS, and SQL. It is an "infinite clicker" game with one simple premise: click on your LightSource to produce photons. You start with a tiny Electromagnetic Field which produces only one photon per click. As you keep clicking, you can collect enough photons to buy better LightSources with more photons per click. You can choose from 13 different LightSources ranging from a candle, to a street lamp, to a Lightsaber, even to the Sun. Buying a certain LightSource also unlocks the ability to buy its "Auto Sources," which produce a certain number of photons per second. You can buy as many Auto Sources as you want, and at certain milestones you earn different medals. The objective of the game is to collect as many medals as possible and rise to the top of the global Leaderboards. The game also includes an extensive transactions log with all your photon expenditure and a customized profile showcasing all your medals and interesting statistics such as the total number of photons spent. The following trailer was my first ever experience with video editing using Adobe Premiere Pro CC.',
       content: [
         {
           type: "subtitle",
@@ -233,33 +233,62 @@ export const projects = {
       background: "white",
       summary: "I worked on this iOS and Android app with HSA Dev!",
       description:
-        "HSA Dev is the only group of Harvard students that run their own web and mobile app development company. The Key Society is the biggest and longest project at HSA Dev. Founded by Zena Edosomwan (’17) and Christian Juzang (’20), two student-athletes of color at Harvard University, The Key Society aims to create a motivated community of Harvard students committed to making networking accessible, genuine, and simple. Members of The Key Society can swipe left and right to connect with one another and search jobs and events posted by companies looking to recruit members. With custom chats and a personalized connection suggestions algorithm, The Key Society is dedicated to using technology to build the most effective networks. The Key Society is built using React Native for the front-end and Postgress/GraphQL for the back-end.",
+        "HSA Dev is the only group of Harvard students that run their own web and mobile app development company. The Key Society is the biggest and most ambitious project at HSA Dev. Founded by Zena Edosomwan (’17) and Christian Juzang (’20), two student-athletes of color at Harvard University, The Key Society aims to create a motivated community of Harvard students committed to making networking accessible, genuine, and simple. Members of The Key Society can swipe left and right to connect with one another and search jobs and events posted by companies looking to recruit members. With custom chats and a personalized connection suggestions algorithm, The Key Society is dedicated to using technology to build the most effective networks. The Key Society app is built using React Native for the front-end and Postgress/GraphQL for the back-end.",
       role:
         "I worked mostly on front-end development for both the iOS and Android apps for The Key 2.0. I worked on developing and enhancing registration flow for both apps, handling Resume Upload for the Android application, user data entry verification, responsive design for the Android build, and bug-testing and debugging for the Android build.",
-      content: []
+      content: [
+        {
+          type: "array",
+          payload: [
+            {
+              type: "button",
+              payload: "More about HSA Dev!",
+              href: "https://www.dev.hsa.net/",
+              target: "_blank"
+            },
+            {
+              type: "button",
+              payload: "More About The Key",
+              href: "https://www.dev.hsa.net/portfolio/thekeysociety",
+              target: "_blank"
+            }
+          ]
+        }
+      ]
     },
     {
       title: "Personal Site",
       key: "personalsite",
       pic: personalSiteLogo,
       background: "transparent",
-      summary:
-        "This site was not built with a template! In fact, I built it from scratch using React.",
+      github: "https://github.com/hossam-nasr/hossam-nasr.github.io",
+      summary: "I built this site using React!",
       description:
-        "Stemming from my love for Computer Science and desire to share my skills, I decided to develop this site from scratch in order to share my story, my talents, and my skills. This site is built from scratch using React.js, and incorporating multiple areas of modular design.",
-      content: []
+        "This personal website here (hossammabed.com) was done using a template! In fact, I built it from scratch using React.js and hosted it on GitHub Pages. Stemming from my passion for Computer Science and desire to share my skills, I decided to opt not to use a standard template, but instead to customly design and create my own personal project, not only to customize my site and make it my own, but also give an example of my front-end experience. I decided to use this site to share my story, my talents, and my skills. This site is fully responsive and looks great on any screen size.",
+      content: [
+        {
+          type: "subtitle",
+          payload: "GitHub!"
+        },
+        {
+          type: "text",
+          payload:
+            "This site was developed from the start using a GitHub repo and hosted using GitHub Pages. Feel free to check it out below! Due to the way GitHub Pages works, the 'master' branch contains the compiled version of the site, while the React source code lives on the 'react' branch."
+        }
+      ]
     },
     {
       title: "Forms4Friends",
       key: "f4f",
       pic: forms4FriendsLogo,
       background: "white",
+      github: "https://github.com/caryaristotle/forms4friends",
       summary:
         "I worked on this project as part of Harvard Law School's Justice Hackathon",
       description:
-        "Forms4Friends was a project inspired by a group of three Harvard students to better the lives of disenfranchised victims of abuse. It aims to help people find easy and quick access to legal forms, with support in helping them fill out and file those forms. The project was implemented as part of the Harvard Law School Code for Life Hackathon, and was implemented using React.js",
+        "Forms4Friends was a project inspired by a group of three Harvard students to better the lives of disenfranchised victims of abuse. It aims to help people find easy and quick access to legal forms, with support in helping them fill out and file those forms. The project was implemented as part of the Harvard Law School's Justice Hackathon, aimed at creating new and creative solutions using technology to improve access to legal services and justice overall. The project was implemented using React.",
       role:
-        "I worked on developing most of the project's front-end base, setting up the core React.js and Routing framework, implementing core logic for form rendering, and other features of responsive design.",
+        "I worked on developing most of the project's front-end base, setting up the core React.js and Routing framework, implementing core logic for form rendering, and features of responsive design.",
       content: []
     },
     {
@@ -267,6 +296,7 @@ export const projects = {
       key: "converge",
       pic: convergeLogo,
       background: "transparent",
+      github: "https://github.com/KevinTXY/Converge",
       summary:
         "I worked on this project as part of Yale's Hackathon YHack 2017",
       description:
@@ -280,10 +310,11 @@ export const projects = {
       key: "todo",
       pic: toDoListLogo,
       background: "white",
+      github: "https://github.com/jbperry004/onboardingFall18",
       summary:
         "I created this project as part of an onboarding process for HSA Dev.",
       description:
-        "This project is a simple to-do list aimed at organizing tasks and schedules for busy students and businesspeople alike. It was implemented as part of the onboarding process for HSA Dev using React.js and Styled Components.",
+        "This project was a simple to-do list aimed at organizing tasks and schedules for busy students and businesspeople alike. It was implemented as part of my onboarding process for HSA Dev. It used React.js and Styled Components.",
       content: []
     }
   ]
