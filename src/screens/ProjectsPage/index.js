@@ -14,9 +14,7 @@ class ProjectsPage extends Component {
     const params = new URLSearchParams(document.location.search);
     const projectKey = params.get("project");
 
-    const projectData = allProjects.find(
-      project => project.key === projectKey
-    );
+    const projectData = allProjects.find(project => project.key === projectKey);
 
     const boxes = allProjects.map(project => (
       <BoxContainer key={project.key}>
@@ -43,13 +41,9 @@ class ProjectsPage extends Component {
 
     const content = projectData ? (
       <ProjectPage
-        title={projectData.title}
-        subtitle={projectData.summary}
+        info={projectData}
         background={page.projectBackground}
         fontColor={page.projectFontColor}
-        content={projectData.content}
-        description={projectData.description}
-        role={projectData.role}
       />
     ) : (
       projectsDisplay
