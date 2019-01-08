@@ -10,10 +10,10 @@ export const BoxesContainer = styled(Flex)`
 `;
 
 export const BoxContainer = styled.div`
-    padding: 40px;
-    @media all and (max-width: 500px) {
-        padding: 0;
-    }
+  padding: 40px;
+  @media all and (max-width: 500px) {
+    padding: 0;
+  }
 `;
 
 export const TextContainer = styled.div`
@@ -46,20 +46,24 @@ export const VideoContainer = styled(Flex)`
   justify-content: center;
   width: 100%;
   flex-shrink: 1;
-`
+`;
 export const Video = styled.iframe`
   width: 50vmax;
   height: 28.125vmax;
+  padding-bottom: 35px;
 `;
 
 export const SectionContentContainer = styled(Flex)`
   flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   background-color: ${props => themeGet(`colors.${props.background}`, "black")};
   color: ${props => themeGet(`colors.${props.fontcolor}`, "white")};
   padding-bottom: 35px;
 `;
 
-export const StyledLink = styled.a`
+export const SilentLink = styled.a`
   text-decoration: none;
 
   &:focus,
@@ -69,7 +73,9 @@ export const StyledLink = styled.a`
   &:active {
     text-decoration: none;
   }
+`;
 
+export const StyledLink = styled(SilentLink)`
   color: ${props =>
     props.selected
       ? themeGet("colors.navigation.text-highlighted", "white")
@@ -80,4 +86,23 @@ export const StyledLink = styled.a`
   :hover {
     color: ${themeGet("colors.navigation.text-highlighted", "white")};
   }
+`;
+
+export const ImageContainer = styled.div`
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+`;
+
+export const Image = styled.img`
+  padding: 35px;
+  width: 30%;
+  @media all and (max-width: 500px) {
+    width: 80%;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+  width: 320px;
+  padding: 0px 35px 10px 35px;
 `;

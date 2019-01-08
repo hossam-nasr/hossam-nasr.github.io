@@ -1,14 +1,21 @@
 import React, { Component } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Flex } from "grid-styled";
 import Section from "./../../../../components/Section";
+import MoreButton from "./../../../../components/MoreButton";
 import {
   TextContainer,
   SubtitleContainer,
   VideoContainer,
   Video,
   StyledLink,
+  SilentLink,
+  ImageContainer,
+  Image,
+  ButtonContainer,
   SectionContentContainer
 } from "./styles";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 class ProjectPage extends Component {
   renderContent = (content, id) => {
@@ -48,32 +55,64 @@ class ProjectPage extends Component {
   };
 
   render() {
-    const contents = this.props.content.map(this.renderContent);
+    const { info, background, fontColor } = this.props;
+    const contents = info.content.map(this.renderContent);
 
     return (
       <Section
-        title={this.props.title}
-        subtitle={this.props.subtitle}
-        background={this.props.background}
-        fontColor={this.props.fontColor}
+        title={info.title}
+        subtitle={info.subtitle}
+        background={background}
+        fontColor={fontColor}
       >
-        <SectionContentContainer
-          background={this.props.background}
-          fontcolor={this.props.fontColor}
-        >
-          <SubtitleContainer>{`About ${this.props.title}`}</SubtitleContainer>
-          <TextContainer>{this.props.description}</TextContainer>
-          {this.props.role ? (
+        <SectionContentContainer background={background} fontcolor={fontColor}>
+          <SubtitleContainer>{`About ${info.title}`}</SubtitleContainer>
+          <ImageContainer>
+            <SilentLink href={info.url} target="_blank">
+              <Image src={info.pic} />
+            </SilentLink>
+          </ImageContainer>
+          <TextContainer>{info.description}</TextContainer>
+          {info.role ? (
             <div>
               <SubtitleContainer>{`About my role in ${
-                this.props.title
+                info.title
               }`}</SubtitleContainer>
-              <TextContainer>{this.props.role}</TextContainer>
+              <TextContainer>{info.role}</TextContainer>
             </div>
           ) : (
             <div />
           )}
           {contents}
+          {(info.url || info.github) && (
+            <div>
+              <SubtitleContainer>Links</SubtitleContainer>
+              <Flex>
+                <ButtonContainer>
+                  <MoreButton
+                    primary={fontColor}
+                    secondary={background}
+                    href={info.url}
+                    target="_blank"
+                  >
+                    {info.title}
+                  </MoreButton>
+                </ButtonContainer>
+                {info.github && (
+                  <ButtonContainer>
+                    <MoreButton
+                      primary={fontColor}
+                      secondary={background}
+                      href={info.github}
+                      target="_blank"
+                    >
+                      <FontAwesomeIcon icon={faGithub} /> GitHub Repo
+                    </MoreButton>
+                  </ButtonContainer>
+                )}
+              </Flex>
+            </div>
+          )}
         </SectionContentContainer>
       </Section>
     );

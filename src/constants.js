@@ -4,7 +4,6 @@ import personalSiteLogo from "./images/logo.png";
 import forms4FriendsLogo from "./images/Forms4FriendsLogo.png";
 import convergeLogo from "./images/convergelogo.png";
 import toDoListLogo from "./images/todolistlogo.png";
-import templateLogo from "./images/template_logo.png";
 import DevLogo from "./images/devlogo.png";
 import TEDxISEE from "./images/TEDxISEE.jpg";
 import TEDxEBIS from "./images/TEDxEBIS.png";
@@ -211,6 +210,8 @@ export const projects = {
       key: "lightsource",
       pic: lightSourceLogo,
       background: "black",
+      url: "http://lightsource.ga",
+      github: "https://github.com/hossam-nasr/lightsource",
       summary: "I developed this infinite clicker game from scratch!",
       description:
         'LightSource is a game I created entirely from scratch using JavaScript, PHP, HTML, CSS, and SQL. It is an "infinite clicker" game with one simple premise: click on your LightSource to produce photons. You start with a simple tiny Electromagnetic Field which produces only one photon per click, but as you keep clicking, you can collect enough photons to buy better LightSources with more photons per click. You can choose from 13 different LightSources ranging from a candle, to a street lamp, to a Lightsaber, even to the Sun. Buying a certain LightSource also unlocks the ability to buy its "Auto Sources," which produce a certain number of photons per second. You can buy as many Auto Sources as you want, and at certain milestones you earn different medals. The objective of the game is to collect as many medals as possible and rise to the top of the global Leaderboards. The game also includes an extensive transactions log with all your photon expenditure and a customized profile showcasing all your medals and interesting statistics such as the total number of photons spent. The following trailer was my first ever experience with video editing using Adobe Premiere Pro CC.',
