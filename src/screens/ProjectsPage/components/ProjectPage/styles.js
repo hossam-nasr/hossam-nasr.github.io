@@ -49,9 +49,13 @@ export const VideoContainer = styled(Flex)`
 `;
 
 export const Video = styled.iframe`
-  width: 50vmax;
-  height: 28.125vmax;
+  width: 50vw;
+  height: 28.125vw;
   padding-bottom: 35px;
+  @media all and (max-width: 500px) {
+    width: 90vw;
+    height: 50.625vw;
+  }
 `;
 
 export const SectionContentContainer = styled(Flex)`
@@ -104,6 +108,6 @@ export const Image = styled.img`
 `;
 
 export const ButtonContainer = styled.div`
-  width: 320px;
-  padding: 0px 25px 10px 30px;
+  width: 300px;
+  padding: 0px 0.8vw 10px 0.8vw;
 `;

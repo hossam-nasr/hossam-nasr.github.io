@@ -239,6 +239,7 @@ export const projects = {
       content: [
         {
           type: "array",
+          justifyContent: "center",
           payload: [
             {
               type: "button",

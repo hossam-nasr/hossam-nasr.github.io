@@ -114,7 +114,7 @@ class ProjectPage extends Component {
           {(info.url || info.github) && (
             <div>
               <SubtitleContainer>Links</SubtitleContainer>
-              <Flex flexWrap="wrap">
+              <Flex flexWrap="wrap" justifyContent="center">
                 {info.url && (
                   <ButtonContainer>
                     <MoreButton
