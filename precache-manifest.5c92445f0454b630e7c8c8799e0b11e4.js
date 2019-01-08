@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e0ad7e98e7191538d407",
+    "revision": "2cb1093a7437f2dae470",
     "url": "/static/css/main.64d49360.chunk.css"
   },
   {
-    "revision": "e0ad7e98e7191538d407",
-    "url": "/static/js/main.e0ad7e98.chunk.js"
+    "revision": "2cb1093a7437f2dae470",
+    "url": "/static/js/main.2cb1093a.chunk.js"
   },
   {
     "revision": "8c5c84b99c72cc9dd613",
@@ -52,7 +52,7 @@ self.__precacheManifest = [
     "url": "/static/media/TEDxEBIS.057999e2.png"
   },
   {
-    "revision": "3e6aba817b7d9682fd865261d0bbc9c8",
+    "revision": "ebf297be9b933ad20cfcd24dca66b33e",
     "url": "/index.html"
   }
 ];
