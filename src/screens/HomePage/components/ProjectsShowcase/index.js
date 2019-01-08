@@ -11,7 +11,7 @@ class ProjectsShowcase extends Component {
         url={project.key}
         pic={project.pic}
         title={project.title}
-        description={project.description}
+        description={project.summary}
         background={project.background}
       />
     ));

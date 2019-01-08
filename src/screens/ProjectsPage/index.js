@@ -10,15 +10,15 @@ import { BoxesContainer, BoxContainer } from "./styles";
 
 class ProjectsPage extends Component {
   render() {
-    const { page } = projects;
+    const { page, allProjects } = projects;
     const params = new URLSearchParams(document.location.search);
     const projectKey = params.get("project");
 
-    const projectData = page.allProjects.find(
+    const projectData = allProjects.find(
       project => project.key === projectKey
     );
 
-    const boxes = page.allProjects.map(project => (
+    const boxes = allProjects.map(project => (
       <BoxContainer key={project.key}>
         <ProjectBox
           url={project.key}

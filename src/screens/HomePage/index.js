@@ -35,7 +35,7 @@ class HomePage extends Component {
             fontColor={projects.section.fontColor}
             columns={false}
           >
-            <ProjectsShowcase projects={projects.section.summaryProjects} />
+            <ProjectsShowcase projects={projects.allProjects.slice(0,3)} />
           </Section>
 
           <AboutMeSection info={AboutMe.section} />
