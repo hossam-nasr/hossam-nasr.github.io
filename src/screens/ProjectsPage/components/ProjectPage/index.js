@@ -52,9 +52,11 @@ class ProjectPage extends Component {
       case "array":
         return (
           <Flex
+            flexWrap="wrap"
             key={id}
             justifyContent={content.justifyContent}
             alignItems={content.alignItems}
+            alignContent={content.alignContent}
           >
             {content.payload.map(this.renderContent)}
           </Flex>
@@ -112,7 +114,7 @@ class ProjectPage extends Component {
           {(info.url || info.github) && (
             <div>
               <SubtitleContainer>Links</SubtitleContainer>
-              <Flex>
+              <Flex flexWrap="wrap">
                 {info.url && (
                   <ButtonContainer>
                     <MoreButton

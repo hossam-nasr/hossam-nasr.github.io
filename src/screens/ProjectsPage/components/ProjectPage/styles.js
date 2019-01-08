@@ -105,5 +105,5 @@ export const Image = styled.img`
 
 export const ButtonContainer = styled.div`
   width: 320px;
-  padding: 0px 35px 10px 35px;
+  padding: 0px 25px 10px 30px;
 `;
