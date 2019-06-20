@@ -81,3 +81,22 @@ export const ButtonContainer = styled.div`
   width: 320px;
   padding-bottom: 10px;
 `;
+
+export const SilentLink = styled.a`
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+  }
+
+`;
+
+export const ImageContainer = styled.div`
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+`;

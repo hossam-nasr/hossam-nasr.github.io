@@ -14,7 +14,9 @@ import {
   SectionContentContainer,
   StyledLink,
   Image,
-  ButtonContainer
+  ButtonContainer,
+  SilentLink,
+  ImageContainer
 } from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -43,7 +45,7 @@ class AboutPage extends Component {
         );
       case "link":
         return (
-          <StyledLink key={id} href={content.url}>
+          <StyledLink key={id} href={content.url} target={content.target}>
             <TextContainer>
               <FontAwesomeIcon icon={content.icon} fixedWidth />
               {` ${content.payload} `}
@@ -62,13 +64,17 @@ class AboutPage extends Component {
         );
       case "pic":
         return (
-          <Image
-            key={id}
-            src={content.payload}
-            alt={content.alt}
-            width={content.width}
-            height={content.height}
-          />
+          <ImageContainer>
+            <SilentLink key={id} target="_blank" href={content.url}>
+              <Image
+                key={id}
+                src={content.payload}
+                alt={content.alt}
+                width={content.width}
+                height={content.height}
+              />
+            </SilentLink>
+          </ImageContainer>
         );
       case "button":
         return (

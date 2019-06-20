@@ -25,6 +25,9 @@ import {
   faCaretUp
 } from "@fortawesome/free-solid-svg-icons";
 
+const devUrl = "https://www.hsadev.com"
+const theKeyUrl = "https://www.hsadev.com/portfolio/thekeysociety"
+
 export const greeting = "Hello World, I'm";
 
 export const footerGreeting = "Thanks for visiting my site!";
@@ -82,7 +85,8 @@ export const AboutMe = {
           {
             type: "pic",
             payload: DevLogo,
-            alt: "Dev Logo"
+            alt: "Dev Logo",
+            url: devUrl
           },
           {
             type: "text",
@@ -92,7 +96,7 @@ export const AboutMe = {
           {
             type: "button",
             payload: "More about HSA Dev!",
-            href: "https://www.dev.hsa.net/",
+            href: devUrl,
             target: "_blank",
             primary: "tertiary",
             secondary: "background.tertiary"
@@ -104,7 +108,8 @@ export const AboutMe = {
           {
             type: "pic",
             payload: theKeyLogo,
-            alt: "The Key Logo"
+            alt: "The Key Logo",
+            url: theKeyUrl
           },
           {
             type: "text",
@@ -114,8 +119,9 @@ export const AboutMe = {
           {
             type: "button",
             payload: "More About The Key",
-            href: "https://www.dev.hsa.net/portfolio/thekeysociety",
+            href: theKeyUrl,
             primary: "tertiary",
+            target: "_blank",
             secondary: "background.tertiary"
           }
         ]
@@ -133,7 +139,8 @@ export const AboutMe = {
           {
             type: "pic",
             payload: TEDxISEE,
-            alt: "TEDxYouth@ISEE logo"
+            alt: "TEDxYouth@ISEE logo",
+            url: "https://www.ted.com/tedx/events/20979"
           },
           {
             type: "text",
@@ -151,7 +158,8 @@ export const AboutMe = {
           {
             type: "pic",
             payload: TEDxEBIS,
-            alt: "TEDxYouth@EBIS logo"
+            alt: "TEDxYouth@EBIS logo",
+            url: "https://www.ted.com/tedx/events/22858"
           },
           {
             type: "text",
@@ -171,13 +179,15 @@ export const AboutMe = {
                 payload: "Watch the videos here!",
                 url:
                   "https://www.youtube.com/playlist?list=PLsRNoUx8w3rPZnyPPRfG4v8oeuTz-c1eZ",
-                icon: faYoutube
+                icon: faYoutube,
+                target: "_blank"
               },
               {
                 type: "link",
                 payload: "Check out our Facebook Page!",
                 url: "https://www.facebook.com/TEDxYouthEBIS/",
-                icon: faFacebookF
+                icon: faFacebookF,
+                target: "_blank"
               }
             ]
           }
@@ -244,13 +254,13 @@ export const projects = {
             {
               type: "button",
               payload: "More about HSA Dev!",
-              href: "https://www.dev.hsa.net/",
+              href: "https://www.hsadev.com/",  
               target: "_blank"
             },
             {
               type: "button",
               payload: "More About The Key",
-              href: "https://www.dev.hsa.net/portfolio/thekeysociety",
+              href: "https://www.hsadev.com/portfolio/thekeysociety",
               target: "_blank"
             }
           ]
