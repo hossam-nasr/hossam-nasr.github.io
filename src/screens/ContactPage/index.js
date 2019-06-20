@@ -14,7 +14,7 @@ class ContactPage extends Component {
       <ContactContent key={contact.key}>
         <FontAwesomeIcon icon={contact.icon} fixedWidth />
         {` ${contact.name}: `}
-        <StyledLink href={contact.url}>{contact.content}</StyledLink>
+        <StyledLink target="_blank" href={contact.url}>{contact.content}</StyledLink>
       </ContactContent>
     ));
 
@@ -22,7 +22,7 @@ class ContactPage extends Component {
       <ContactContent key={social.key}>
         <FontAwesomeIcon icon={social.icon} fixedWidth />
         {` ${social.name}: `}
-        <StyledLink href={social.url}>{social.handle}</StyledLink>
+        <StyledLink target="_blank" href={social.url}>{social.handle}</StyledLink>
       </ContactContent>
     ));
     return (
