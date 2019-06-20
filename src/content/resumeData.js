@@ -15,7 +15,7 @@ const resumeData = {
         description: "A.B., Computer Science with Secondary in Government.",
         relevant:
           "Systems Programming, Abstraction in Computation, Theoretical Computer Science, Multivariable Calculus.",
-        gpa: "3.919",
+        gpa: "3.844",
         abroad: {
           description:
             "Harvard Summer School Study Abroad Program in Trento, Italy, doing coursework in Mind, Brain and Behavior.",
@@ -55,7 +55,7 @@ const resumeData = {
         "jQuery",
         "Node.js",
         "React.js",
-        "Postgress",
+        "PostgreSQL",
         "graphQL"
       ]
     },
