@@ -6,12 +6,33 @@ import MenuItem from "./../MenuItem";
 import { MenuIcon } from "./../../constants";
 
 class NavigationBar extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      smaller: false
+    };
+  }
+
+  componentDidMount() {
+    window.addEventListener("scroll", () => {
+      const distanceY =
+          window.pageYOffset || document.documentElement.scrollTop,
+        shrinkOn = 200;
+      if (distanceY > shrinkOn) {
+        this.setState({ smaller: true });
+      } else {
+        this.setState({ smaller: false });
+      }
+    });
+  }
+
   render() {
+    const { smaller } = this.state;
     return (
       <Container>
-        <Logo />
+        <Logo id="Logo" smaller={smaller} />
         <Toggle id="menuToggle" type="checkbox" />
-        <Label htmlFor="menuToggle">
+        <Label htmlFor="menuToggle" smaller={smaller}>
           <FontAwesomeIcon icon={MenuIcon.down} className="down" size="2x" />
           <FontAwesomeIcon icon={MenuIcon.up} className="up" size="2x" />
         </Label>

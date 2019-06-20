@@ -87,13 +87,14 @@ export const Label = styled.label`
   cursor: pointer;
   float: right;
   height: 35px;
-  margin-top: 0.5em;
-  margin-right: 1em;
+  margin-top: ${props => props.smaller ? '0.4em' : '0.5em' };
+  margin-right: ${props => props.smaller ? '0.7em' : '1em' };
   width: 35px;
   position: relative;
-  transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease, margin 0.2s ease, font-size 0.2s ease;
+  -moz-transition: all 0.5s ease, margin 0.2s ease, font-size 0.2s ease;
+  -webkit-transition: all 0.5s ease, margin 0.2s ease, font-size 0.2s ease;
+  font-size: ${props => props.smaller ? '0.9em' : '1em' };
 
   svg {
     position: absolute;
