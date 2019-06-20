@@ -101,7 +101,8 @@ export const contactInfo = [
     name: "Location",
     key: "loc",
     content: "Cambridge, Massachusetts",
-    icon: faMapMarkerAlt
+    icon: faMapMarkerAlt,
+    url: "https://goo.gl/maps/yNTdSNZEK1k8zA4R7"
   },
   {
     name: "Phone Number",
