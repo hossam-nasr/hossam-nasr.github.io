@@ -4,6 +4,8 @@ import personalSiteLogo from "../images/logo.png";
 import forms4FriendsLogo from "../images/Forms4FriendsLogo.png";
 import convergeLogo from "../images/convergelogo.png";
 import toDoListLogo from "../images/todolistlogo.png";
+import aalumLogo from "../images/aalumlogo.png";
+const moment = require("moment");
 
 const projectsData = {
   section: {
@@ -24,7 +26,45 @@ const projectsData = {
   },
   allProjects: [
     {
+      title: "AAlum",
+      significance: 50,
+      contribution: 30,
+      start: moment("01022019", "DDMMYYYY"),
+      end: moment("30042019", "DDMMYYYY"),
+      key: "aalum",
+      pic: aalumLogo,
+      background: "white",
+      url: "",
+      summary: "I had substantial contribution to this iOS and Android app!",
+      description:
+        "AAlum is a start-up with a college-oriented dating app. AAlum has a similar interface to Tinder, where users swipe right on those they see as a match and left on those they don't. AAlum is different, however, because it is directed specifically towards college students and alumni, and a college email is required to sign-up. AAlum also has substantially more features, such as more detailed preferences, filtraion, and customization options, getting notified of a potential match, searching for specific users, and even recommending a match to a friend or colleague.",
+      role:
+        "While working with HSA Dev, I gained substantial front-end and mobile development experience, by having substantial contribution to two React-Native apps. I also gained significant experience in working in a large team setting, using AGILE development models, Zenhub management plugin, and front-end unit-testing frameworks. One of those two apps was AAlum.",
+      content: [
+        {
+          type: "text",
+          payload:
+            "I was a key Software Engineer in the front-end development team working on AAlum from the start, and I had a substantial role in developing the app. I worked on developing multiple key components and screens in registration flow, user profiles, and the user filtration process, as well as features such as blocking, reporting and chatting. I also developed standardized practices for enum mappings and front-end unit testing."
+        },
+        {
+          type: "text",
+          payload:
+            "The app was developed using React-Native for the front-end and GraphQL for the back-end, and managed using AGILE development methods. The project was ultimately discontinued from HSA Dev, and is currently under development by another company."
+        },
+        {
+          type: "button",
+          payload: "More about HSA Dev!",
+          href: "https://www.hsadev.com/",
+          target: "_blank"
+        }
+      ]
+    },
+    {
       title: "LightSource",
+      significance: 40,
+      contribution: 100,
+      start: moment("15042016", "DDMMYYYY"),
+      end: moment("15012017", "DDMMYYYY"),
       key: "lightsource",
       pic: lightSourceLogo,
       background: "black",
@@ -46,12 +86,16 @@ const projectsData = {
     },
     {
       title: "The Key",
+      significance: 35,
+      contribution: 10,
+      start: moment("01112018", "DDMMYYYY"),
+      end: moment("15122018", "DDMMYYYY"),
       key: "thekey",
       pic: theKeyLogo,
       background: "white",
       summary: "I worked on this iOS and Android app with HSA Dev!",
       description:
-        "HSA Dev is the only group of Harvard students that run their own web and mobile app development company. The Key Society is the biggest and most ambitious project at HSA Dev. Founded by Zena Edosomwan (’17) and Christian Juzang (’20), two student-athletes of color at Harvard University, The Key Society aims to create a motivated community of Harvard students committed to making networking accessible, genuine, and simple. Members of The Key Society can swipe left and right to connect with one another and search jobs and events posted by companies looking to recruit members. With custom chats and a personalized connection suggestions algorithm, The Key Society is dedicated to using technology to build the most effective networks. The Key Society app is built using React Native for the front-end and Postgress/GraphQL for the back-end.",
+        "HSA Dev is the only group of Harvard students that run their own web and mobile app development company. The Key Society is the biggest and most ambitious project at HSA Dev. Founded by Zena Edosomwan (’17) and Christian Juzang (’20), two student-athletes of color at Harvard University, The Key Society aims to create a motivated community of Harvard students committed to making networking accessible, genuine, and simple. Members of The Key Society can swipe left and right to connect with one another and search jobs and events posted by companies looking to recruit members. With custom chats and a personalized connection suggestions algorithm, The Key Society is dedicated to using technology to build the most effective networks. The Key Society app is built using React Native for the front-end and PostgreSQL/GraphQL for the back-end.",
       role:
         "I worked mostly on front-end development for both the iOS and Android apps for The Key 2.0. I worked on developing and enhancing registration flow for both apps, handling Resume Upload for the Android application, user data entry verification, responsive design for the Android build, and bug-testing and debugging for the Android build.",
       content: [
@@ -77,6 +121,10 @@ const projectsData = {
     },
     {
       title: "Personal Site",
+      contribution: 100,
+      significance: 30,
+      start: moment("21122018", "DDMMYYYY"),
+      end: moment("09012019", "DDMMYYYY"),
       key: "personalsite",
       pic: personalSiteLogo,
       background: "transparent",
@@ -98,6 +146,10 @@ const projectsData = {
     },
     {
       title: "Forms4Friends",
+      start: moment("10112018", "DDMMYYYY"),
+      end: moment("10112018", "DDMMYYYY"),
+      significance: 3,
+      contribution: 70,
       key: "f4f",
       pic: forms4FriendsLogo,
       background: "white",
@@ -112,6 +164,10 @@ const projectsData = {
     },
     {
       title: "Converge",
+      significance: 2,
+      contribution: 30,
+      start: moment("02122017", "DDMMYYYY"),
+      end: moment("04122017", "DDMMYYYY"),
       key: "converge",
       pic: convergeLogo,
       background: "transparent",
@@ -126,6 +182,10 @@ const projectsData = {
     },
     {
       title: "ToDo List",
+      contribution: 100,
+      significance: 1,
+      start: moment("01112018", "DDMMYYYY"),
+      end: moment("02112018", "DDMMYYYY"),
       key: "todo",
       pic: toDoListLogo,
       background: "white",
