@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { themeGet } from "styled-system";
 import { Flex } from "grid-styled";
-import { MenuIcon } from "./../../constants";
 
 export const BoxesContainer = styled(Flex)`
   flex-flow: row wrap;
@@ -36,8 +35,6 @@ export const Label = styled.label`
     content: "\f107";
     font-family: "Font Awesome 5 Free";
     font-size: 20px;
-    vertical-align: center;
-    text-align: center; 
     color: ${themeGet("colors.primary")};
     position: relative;
     right: 22px;    

@@ -101,7 +101,8 @@ export const ImageContainer = styled.div`
 
 export const Image = styled.img`
   padding: 35px;
-  width: 30%;
+  max-width: 30%;
+  max-height: 350px;
   @media all and (max-width: 500px) {
     width: 80%;
   }

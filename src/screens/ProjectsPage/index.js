@@ -66,6 +66,13 @@ class ProjectsPage extends Component {
             } else {
               return b.end - b.start - (a.end - a.start);
             }
+          case "alphabetical":
+            console.log("HERE!!")
+            if (a.title === b.title) {
+              return b.significance - a.significance;
+            } else {
+              return b.title < a.title ? 1 : -1;
+            }
           default:
             return b.significance - a.significance;
         }
@@ -104,6 +111,7 @@ class ProjectsPage extends Component {
               <Option value="oldest">Oldest</Option>
               <Option value="newest">Newest</Option>
               <Option value="duration">Duration</Option>
+              <Option value="alphabetical">Alphabetical</Option>
             </Select>
           </Label>
         </SelectContainer>
