@@ -1,13 +1,22 @@
 import React, { Component } from "react";
 import { Flipper, Flipped } from "react-flip-toolkit";
 import NavigationBar from "./../../components/NavigationBar";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { MenuIcon } from "../../constants";
 import ContentContainer from "./../../components/ContentContainer";
 import Title from "./../../components/Title";
 import Section from "./../../components/Section";
 import ProjectBox from "./../../components/ProjectBox";
 import { projects } from "./../../constants.js";
 import ProjectPage from "./components/ProjectPage";
-import { BoxesContainer, BoxContainer, SelectContainer, Label } from "./styles";
+import {
+  BoxesContainer,
+  BoxContainer,
+  SelectContainer,
+  Label,
+  Select,
+  Option
+} from "./styles";
 
 class ProjectsPage extends Component {
   constructor(props) {
@@ -86,17 +95,17 @@ class ProjectsPage extends Component {
       >
         <SelectContainer>
           <Label>Sort by:</Label>
-          <select
+          <Select
             onChange={event => {
               this.setState({ sortby: event.currentTarget.value });
             }}
           >
-            <option value="significance">Significance</option>
-            <option value="contribution">Contribution</option>
-            <option value="oldest">Oldest</option>
-            <option value="newest">Newest</option>
-            <option value="duration">Duration</option>
-          </select>
+            <Option value="significance">Significance</Option>
+            <Option value="contribution">Contribution</Option>
+            <Option value="oldest">Oldest</Option>
+            <Option value="newest">Newest</Option>
+            <Option value="duration">Duration</Option>
+          </Select>
         </SelectContainer>
         <Flipper flipKey={sortby} spring="stiff">
           <BoxesContainer background={page.background}>{boxes}</BoxesContainer>

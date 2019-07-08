@@ -7,11 +7,68 @@ export const BoxesContainer = styled(Flex)`
   background-color: ${props => themeGet(`colors.${props.background}`, "black")};
   justify-content: center;
   padding-bottom: 35px;
+  width: 100%;
 `;
 
 export const BoxContainer = styled.div`
-    padding: 40px;
-    @media all and (max-width: 500px) {
-        padding: 0;
-    }
+  padding: 40px;
+  @media all and (max-width: 500px) {
+    padding: 0;
+  }
+`;
+
+export const SelectContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+`;
+
+export const Label = styled.label`
+  font-family: ${themeGet("fonts.primary")};
+  font-size: 24px;
+  color: ${themeGet("colors.primary")};
+  margin-right: 10px;
+`;
+
+export const Select = styled.select`
+  background-color: transparent;
+  color: ${themeGet("colors.primary")};
+  font-size: 24px;
+  font-family: ${themeGet("fonts.primary")};
+  border: 2px solid ${themeGet("colors.primary")};
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+    outline: none;
+  }
+`;
+
+export const Option = styled.option`
+  background-color: ${themeGet("colors.secondary")};
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-shadow: none;
+  border: 2px solid white;
+
+  &:focus,
+  &:hover,
+  &:visited,
+  &:link,
+  &:active {
+    text-decoration: none;
+    outline: none;
+    background-color: transparent;
+  }
 `;
