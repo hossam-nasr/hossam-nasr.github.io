@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { themeGet } from "styled-system";
 import { Flex } from "grid-styled";
+import { MenuIcon } from "./../../constants";
 
 export const BoxesContainer = styled(Flex)`
   flex-flow: row wrap;
@@ -29,7 +30,19 @@ export const Label = styled.label`
   font-family: ${themeGet("fonts.primary")};
   font-size: 24px;
   color: ${themeGet("colors.primary")};
-  margin-right: 10px;
+  position: relative;
+
+  :after {
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-size: 20px;
+    vertical-align: center;
+    text-align: center; 
+    color: ${themeGet("colors.primary")};
+    position: relative;
+    right: 22px;    
+    font-weight: 900;
+  }
 `;
 
 export const Select = styled.select`
@@ -41,8 +54,11 @@ export const Select = styled.select`
   padding-top: 3px;
   padding-bottom: 3px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 30px;
   text-decoration: none;
+  margin-left: 10px;
+
+  appearance: none;
 
   &:focus,
   &:hover,

@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import { Flipper, Flipped } from "react-flip-toolkit";
 import NavigationBar from "./../../components/NavigationBar";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { MenuIcon } from "../../constants";
 import ContentContainer from "./../../components/ContentContainer";
 import Title from "./../../components/Title";
 import Section from "./../../components/Section";
@@ -94,18 +92,20 @@ class ProjectsPage extends Component {
         fontColor={page.fontColor}
       >
         <SelectContainer>
-          <Label>Sort by:</Label>
-          <Select
-            onChange={event => {
-              this.setState({ sortby: event.currentTarget.value });
-            }}
-          >
-            <Option value="significance">Significance</Option>
-            <Option value="contribution">Contribution</Option>
-            <Option value="oldest">Oldest</Option>
-            <Option value="newest">Newest</Option>
-            <Option value="duration">Duration</Option>
-          </Select>
+          <Label>
+            Sort by:
+            <Select
+              onChange={event => {
+                this.setState({ sortby: event.currentTarget.value });
+              }}
+            >
+              <Option value="significance">Significance</Option>
+              <Option value="contribution">Contribution</Option>
+              <Option value="oldest">Oldest</Option>
+              <Option value="newest">Newest</Option>
+              <Option value="duration">Duration</Option>
+            </Select>
+          </Label>
         </SelectContainer>
         <Flipper flipKey={sortby} spring="stiff">
           <BoxesContainer background={page.background}>{boxes}</BoxesContainer>
