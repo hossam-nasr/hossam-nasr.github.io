@@ -2,6 +2,7 @@ import DevLogo from "../images/devlogo.png";
 import TEDxISEE from "../images/TEDxISEE.jpg";
 import TEDxEBIS from "../images/TEDxEBIS.png";
 import theKeyLogo from "../images/thekeylogo.png";
+import aalumLogo from "../images/aalumlogo.png";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
 
 const devUrl = "https://www.hsadev.com";
@@ -9,7 +10,6 @@ const theKeyUrl = "https://www.hsadev.com/portfolio/thekeysociety";
 
 const biography =
   "I was born in Mansoura, Egypt, to a middle class Egyptian family. I grew up and lived most of my life there. I discovered my passion for Computer Science at a very young age, and have been coding ever since! When I was 10, I also got to witness one of the most influencial moments of my life: the January 25th, 2011 Revolution during the Arab Spring. It sparked within me a dream: to make a change; to leave the world a better place. I left Mansoura and moved to Cairo to pursue British high school education. During high school, I was set on continuing university education abroad. I did Model UN, was a Teaching Assistant for IGCSE ICT, and became the president of the EducationUSA Competitive College Club. On March 30th, 2017, my three-year-old dream came true when I received my acceptance letter to join the Harvard class of 2021. It has only made my dreams and ambitions grow stronger and bigger ever since.";
-
 
 const AboutMeData = {
   section: {
@@ -67,6 +67,11 @@ const AboutMeData = {
             payload: "My role in HSA Dev"
           },
           {
+            type: "text",
+            payload:
+              "I joined HSA Dev in October 2018 as a Software Engineer. I work as both front-end and back-end Engineer, focusing mostly on front-end. With HSA Dev, I work on both the iOS and Andoird apps for The Key Society and AAlum. While working with HSA Dev, I gained substantial front-end and mobile development experience, by having substantial contribution to two React-Native apps. I also gained significant experience in working in a large team setting, using AGILE development models, Zenhub management plugin, and front-end unit-testing frameworks."
+          },
+          {
             type: "pic",
             payload: theKeyLogo,
             alt: "The Key Logo",
@@ -75,12 +80,31 @@ const AboutMeData = {
           {
             type: "text",
             payload:
-              "I joined HSA Dev in October 2018 as a Software Engineer. I work as both front-end and back-end Engineer, focusing mostly on front-end. With HSA Dev, I work on both the iOS and Andoird apps for The Key Society, HSA Dev's most ambitious project yet. The Key Society is a start-up founded by two Harvard students, aimed at creating a motivated community of Harvard students committed to making networking accessible, genuine, and simple. On the Key, I worked on registration flow, data validation, responsive design, as well as bug-testing and debugging for both the iOS and Android versions of The Key Society 2.0."
+              "The Key Society is a start-up founded by two Harvard students, aimed at creating a motivated community of Harvard students committed to making networking accessible, genuine, and simple. On the Key, I worked on registration flow, data validation, responsive design, as well as bug-testing and debugging for both the iOS and Android versions of The Key Society 2.0."
           },
           {
             type: "button",
             payload: "More About The Key",
             href: theKeyUrl,
+            primary: "tertiary",
+            target: "_blank",
+            secondary: "background.tertiary"
+          },
+          {
+            type: "pic",
+            payload: aalumLogo,
+            alt: "AAlum Logo",
+            url: "projects?project=aalum"
+          },
+          {
+            type: "text",
+            payload:
+              "AAlum is a start-up developing a dating app, with a similar interface to Tinder, with substantially more features, such as more detailed preferences, filtraion, and customization options, getting notified of a potential match, and searching for specific users. I was a key Software Engineer in the front-end development team working on AAlum from the start, and I had a substantial role in developing the app. I worked on developing multiple key components and screens in registration flow, user profiles, and the user filtration process, as well as features such as blocking, reporting and chatting. I also developed standardized practices for enum mappings and front-end unit testing."
+          },
+          {
+            type: "button",
+            payload: "More About AAlum",
+            href: "hossammabed.com/projects?project=aalum",
             primary: "tertiary",
             target: "_blank",
             secondary: "background.tertiary"
