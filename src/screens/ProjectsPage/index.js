@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Flipper, Flipped } from "react-flip-toolkit";
 import NavigationBar from "./../../components/NavigationBar";
 import ContentContainer from "./../../components/ContentContainer";
 import Title from "./../../components/Title";
@@ -6,27 +7,75 @@ import Section from "./../../components/Section";
 import ProjectBox from "./../../components/ProjectBox";
 import { projects } from "./../../constants.js";
 import ProjectPage from "./components/ProjectPage";
-import { BoxesContainer, BoxContainer } from "./styles";
+import { BoxesContainer, BoxContainer, SelectContainer, Label } from "./styles";
 
 class ProjectsPage extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      sortby: "significance"
+    };
+  }
+
   render() {
     const { page, allProjects } = projects;
+    const { sortby } = this.state;
     const params = new URLSearchParams(document.location.search);
     const projectKey = params.get("project");
 
     const projectData = allProjects.find(project => project.key === projectKey);
 
-    const boxes = allProjects.map(project => (
-      <BoxContainer key={project.key}>
-        <ProjectBox
-          url={project.key}
-          pic={project.pic}
-          title={project.title}
-          description={project.summary}
-          background={project.background}
-        />
-      </BoxContainer>
-    ));
+    const boxes = allProjects
+      .sort((a, b) => {
+        switch (sortby) {
+          case "significance":
+            if (a.significance === b.significance) {
+              return b.contribution - a.contribution;
+            } else {
+              return b.significance - a.significance;
+            }
+          case "contribution":
+            if (a.contribution === b.contribution) {
+              return b.significance - a.significance;
+            } else {
+              return b.contribution - a.contribution;
+            }
+          case "oldest":
+            if (a.end === b.end) {
+              return b.significance - a.significance;
+            } else {
+              return a.end - b.end;
+            }
+          case "newest":
+            if (a.end === b.end) {
+              return b.significance - a.significance;
+            } else {
+              return b.end - a.end;
+            }
+          case "duration":
+            if (a.end - a.start === b.end - b.start) {
+              return b.significance - a.significance;
+            } else {
+              return b.end - b.start - (a.end - a.start);
+            }
+          default:
+            return b.significance - a.significance;
+        }
+      })
+      .map(project => (
+        <Flipped flipId={project.key} key={project.key}>
+          <BoxContainer>
+            <ProjectBox
+              url={project.key}
+              pic={project.pic}
+              title={project.title}
+              description={project.summary}
+              background={project.background}
+            />
+          </BoxContainer>
+        </Flipped>
+      ));
 
     const projectsDisplay = (
       <Section
@@ -35,7 +84,23 @@ class ProjectsPage extends Component {
         background={page.background}
         fontColor={page.fontColor}
       >
-        <BoxesContainer background={page.background}>{boxes}</BoxesContainer>
+        <SelectContainer>
+          <Label>Sort by:</Label>
+          <select
+            onChange={event => {
+              this.setState({ sortby: event.currentTarget.value });
+            }}
+          >
+            <option value="significance">Significance</option>
+            <option value="contribution">Contribution</option>
+            <option value="oldest">Oldest</option>
+            <option value="newest">Newest</option>
+            <option value="duration">Duration</option>
+          </select>
+        </SelectContainer>
+        <Flipper flipKey={sortby} spring="stiff">
+          <BoxesContainer background={page.background}>{boxes}</BoxesContainer>
+        </Flipper>
       </Section>
     );
 
