@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { Icon } from "./styles";
 import logoImg from "./../../../../images/logo.png";
-import { throws } from "assert";
 
 class Logo extends Component {
 

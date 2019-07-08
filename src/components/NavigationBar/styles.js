@@ -57,7 +57,7 @@ export const StyledLink = styled(Link)`
   &:visited,
   &:link,
   &:active {
-    text-decoration: none;
+    text-decoration: none;  
   }
 `;
 
