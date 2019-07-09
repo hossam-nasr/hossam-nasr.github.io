@@ -67,7 +67,7 @@ class ProjectsPage extends Component {
               return b.end - b.start - (a.end - a.start);
             }
           case "alphabetical":
-            console.log("HERE!!")
+            console.log("HERE!!");
             if (a.title === b.title) {
               return b.significance - a.significance;
             } else {
@@ -124,8 +124,8 @@ class ProjectsPage extends Component {
     const content = projectData ? (
       <ProjectPage
         info={projectData}
-        background={page.projectBackground}
-        fontColor={page.projectFontColor}
+        background={projectData.pageBackground || page.projectBackground}
+        fontColor={projectData.fontColor || page.projectFontColor}
       />
     ) : (
       projectsDisplay

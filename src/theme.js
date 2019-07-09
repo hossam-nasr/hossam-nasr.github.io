@@ -18,7 +18,13 @@ const theme = {
     },
     primary: "#DDDDDD",
     secondary: "#2b2b2b",
-    tertiary: "#1c1c1c"
+    tertiary: "#1c1c1c",
+    lightsourceBlue: '#090E1D',
+    lightsourceWhite: '#FEFCFE',
+    aalumPink: '#E13090',
+    aalumWhite: '#F9F9F9',
+    black: '#000000',
+    white: '#FFFFFF'
   },
   fonts: {
     primary: "Raleway",

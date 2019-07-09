@@ -27,6 +27,8 @@ const projectsData = {
   allProjects: [
     {
       title: "AAlum",
+      pageBackground: "aalumWhite",
+      fontColor: "aalumPink",
       significance: 50,
       contribution: 30,
       start: moment("01022019", "DDMMYYYY"),
@@ -61,6 +63,8 @@ const projectsData = {
     },
     {
       title: "LightSource",
+      pageBackground: "lightsourceBlue",
+      fontColor: "lightsourceWhite",
       significance: 40,
       contribution: 100,
       start: moment("15042016", "DDMMYYYY"),
@@ -121,6 +125,8 @@ const projectsData = {
     },
     {
       title: "Personal Site",
+      pageBackground: "black",
+      fontColor: "white",
       contribution: 100,
       significance: 30,
       start: moment("21122018", "DDMMYYYY"),
@@ -131,7 +137,7 @@ const projectsData = {
       github: "https://github.com/hossam-nasr/hossam-nasr.github.io",
       summary: "I built this site using React!",
       description:
-        "This personal website here (hossammabed.com) was not done using a template! In fact, I built it from scratch using React.js and hosted it on GitHub Pages. Stemming from my passion for Computer Science and desire to share my skills, I decided to opt not to use a standard template, but instead to customly design and create my own personal project, not only to customize my site and make it my own, but also give an example of my front-end experience. I decided to use this site to share my story, my talents, and my skills. This site is fully responsive and looks great on any screen size.",
+        "This personal website here (hossammabed.com) was not done using a template! In fact, I built it from scratch using React.js and hosted it on GitHub Pages. Stemming from my passion for Computer Science and desire to share my skills, I decided to opt not to use a standard template, but instead to customly design and create my own personal project, not only to customize my site and make it my own, but also give an example of my front-end experience. I decided to use this site to share my story, my talents, and my skills. This site is fully responsive! Try minimizing the screen or viewing it on a mobile device. It looks great on all sreen sizes!",
       content: [
         {
           type: "subtitle",
