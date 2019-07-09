@@ -6,6 +6,8 @@ The website is hosted using GitHub Pages on [my personal account](https://hossam
 
 Due to the way GitHub Pages works, the compiled and built version of the website is hosted on the ```master``` branch of this repo. The original ```React``` source code is hosted on the ```react``` branch. 
 
+This site is fully responsive! Try minimizing the screen or viewing it on a mobile device.
+
 ## Available Scripts
 
 If you want to run this repo locally, you can run the following scripts on the ```react``` branch:
