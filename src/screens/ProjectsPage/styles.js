@@ -68,6 +68,7 @@ export const Select = styled.select`
 `;
 
 export const Option = styled.option`
+  font-size: 20px;
   background-color: ${themeGet("colors.secondary")};
   outline: none;
   border: none;
