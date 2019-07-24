@@ -5,6 +5,7 @@ import forms4FriendsLogo from "../images/Forms4FriendsLogo.png";
 import convergeLogo from "../images/convergelogo.png";
 import toDoListLogo from "../images/todolistlogo.png";
 import aalumLogo from "../images/aalumlogo.png";
+import { devUrl, theKeyUrl } from "./urls";
 const moment = require("moment");
 
 const projectsData = {
@@ -56,7 +57,7 @@ const projectsData = {
         {
           type: "button",
           payload: "More about HSA Dev!",
-          href: "https://www.hsadev.com/",
+          href: devUrl,
           target: "_blank"
         }
       ]
@@ -110,13 +111,13 @@ const projectsData = {
             {
               type: "button",
               payload: "More about HSA Dev!",
-              href: "https://www.hsadev.com/",
+              href: devUrl,
               target: "_blank"
             },
             {
               type: "button",
               payload: "More About The Key",
-              href: "https://www.hsadev.com/portfolio/thekeysociety",
+              href: theKeyUrl,
               target: "_blank"
             }
           ]

@@ -4,9 +4,7 @@ import TEDxEBIS from "../images/TEDxEBIS.png";
 import theKeyLogo from "../images/thekeylogo.png";
 import aalumLogo from "../images/aalumlogo.png";
 import { faFacebookF, faYoutube } from "@fortawesome/free-brands-svg-icons";
-
-const devUrl = "https://www.hsadev.com";
-const theKeyUrl = "https://www.hsadev.com/portfolio/thekeysociety";
+import { devUrl, theKeyUrl, aalumUrl } from "./urls";
 
 const biography =
   "I was born in Mansoura, Egypt, to a middle class Egyptian family. I grew up and lived most of my life there. I discovered my passion for Computer Science at a very young age, and have been coding ever since! When I was 10, I also got to witness one of the most influencial moments of my life: the January 25th, 2011 Revolution during the Arab Spring. It sparked within me a dream: to make a change; to leave the world a better place. I left Mansoura and moved to Cairo to pursue British high school education. During high school, I was set on continuing university education abroad. I did Model UN, was a Teaching Assistant for IGCSE ICT, and became the president of the EducationUSA Competitive College Club. On March 30th, 2017, my three-year-old dream came true when I received my acceptance letter to join the Harvard class of 2021. It has only made my dreams and ambitions grow stronger and bigger ever since.";
@@ -94,7 +92,7 @@ const AboutMeData = {
             type: "pic",
             payload: aalumLogo,
             alt: "AAlum Logo",
-            url: "projects?project=aalum"
+            url: aalumUrl
           },
           {
             type: "text",
@@ -104,7 +102,7 @@ const AboutMeData = {
           {
             type: "button",
             payload: "More About AAlum",
-            href: "projects?project=aalum",
+            href: aalumUrl,
             primary: "tertiary",
             target: "_blank",
             secondary: "background.tertiary"
