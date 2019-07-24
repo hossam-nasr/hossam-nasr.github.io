@@ -64,8 +64,8 @@ class AboutPage extends Component {
         );
       case "pic":
         return (
-          <ImageContainer>
-            <SilentLink key={id} target="_blank" href={content.url}>
+          <ImageContainer key={id}>
+            <SilentLink target="_blank" href={content.url}>
               <Image
                 key={id}
                 src={content.payload}
