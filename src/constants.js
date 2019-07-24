@@ -41,9 +41,9 @@ export const socialLinks = [
   {
     name: "Facebook",
     key: "fb",
-    url: "https://www.facebook.com/hossam.e.mohammed.10",
+    url: "https://www.facebook.com/hossam.nasr99",
     icon: faFacebookF,
-    handle: "hossam.e.mohammed.10"
+    handle: "hossam.nasr99"
   },
   {
     name: "Twitter",
