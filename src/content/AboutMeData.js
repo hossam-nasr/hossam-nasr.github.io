@@ -104,7 +104,7 @@ const AboutMeData = {
           {
             type: "button",
             payload: "More About AAlum",
-            href: "hossammabed.com/projects?project=aalum",
+            href: "projects?project=aalum",
             primary: "tertiary",
             target: "_blank",
             secondary: "background.tertiary"

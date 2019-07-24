@@ -31,8 +31,8 @@ class NavigationBar extends Component {
     return (
       <Container>
         <Logo id="Logo" smaller={smaller} />
-        <Toggle type="checkbox" />
-        <Label smaller={smaller}>
+        <Toggle id="menuToggle" type="checkbox" />
+        <Label htmlFor="menuToggle" smaller={smaller}>
           <FontAwesomeIcon icon={MenuIcon.down} className="down" size="2x" />
           <FontAwesomeIcon icon={MenuIcon.up} className="up" size="2x" />
         </Label>
