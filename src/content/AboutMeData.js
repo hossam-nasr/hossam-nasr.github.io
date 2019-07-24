@@ -97,7 +97,7 @@ const AboutMeData = {
           {
             type: "text",
             payload:
-              "AAlum is a start-up developing a dating app, with a similar interface to Tinder, with substantially more features, such as more detailed preferences, filtraion, and customization options, getting notified of a potential match, and searching for specific users. I was a key Software Engineer in the front-end development team working on AAlum from the start, and I had a substantial role in developing the app. I worked on developing multiple key components and screens in registration flow, user profiles, and the user filtration process, as well as features such as blocking, reporting and chatting. I also developed standardized practices for enum mappings and front-end unit testing."
+              "AAlum is a start-up developing a dating app, with a similar interface to Tinder, with substantially more features, such as more detailed preferences, filtration, and customization options, getting notified of a potential match, and searching for specific users. I was a key Software Engineer in the front-end development team working on AAlum from the start, and I had a substantial role in developing the app. I worked on developing multiple key components and screens in registration flow, user profiles, and the user filtration process, as well as features such as blocking, reporting and chatting. I also developed standardized practices for enum mappings and front-end unit testing."
           },
           {
             type: "button",

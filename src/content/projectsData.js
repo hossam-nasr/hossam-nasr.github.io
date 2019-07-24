@@ -40,7 +40,7 @@ const projectsData = {
       url: "",
       summary: "I had substantial contribution to this iOS and Android app!",
       description:
-        "AAlum is a start-up with a college-oriented dating app. AAlum has a similar interface to Tinder, where users swipe right on those they see as a match and left on those they don't. AAlum is different, however, because it is directed specifically towards college students and alumni, and a college email is required to sign-up. AAlum also has substantially more features, such as more detailed preferences, filtraion, and customization options, getting notified of a potential match, searching for specific users, and even recommending a match to a friend or colleague.",
+        "AAlum is a start-up with a college-oriented dating app. AAlum has a similar interface to Tinder, where users swipe right on those they see as a match and left on those they don't. AAlum is different, however, because it is directed specifically towards college students and alumni, and a college email is required to sign-up. AAlum also has substantially more features, such as more detailed preferences, filtration, and customization options, getting notified of a potential match, searching for specific users, and even recommending a match to a friend or colleague.",
       role:
         "While working with HSA Dev, I gained substantial front-end and mobile development experience, by having substantial contribution to two React-Native apps. I also gained significant experience in working in a large team setting, using AGILE development models, Zenhub management plugin, and front-end unit-testing frameworks. One of those two apps was AAlum.",
       content: [
