@@ -18,6 +18,35 @@ import {
   DetailsRight
 } from "./styles";
 
+const renderDetail = leader => (
+  <DetailsContainer key={leader.key}>
+    <InlineDetails>
+      <DetailsTitle>{leader.title}</DetailsTitle>
+      <DetailsRight>
+        <DetailsHidden>Location: </DetailsHidden>
+        {leader.location}
+      </DetailsRight>
+    </InlineDetails>
+    <InlineDetails>
+      <Details>
+        <DetailsHidden>Position: </DetailsHidden>
+        {leader.position}
+      </Details>
+      <DetailsRight>
+        <DetailsHidden>Duration: </DetailsHidden>
+        {leader.start} - {leader.current ? "Present" : leader.end}
+      </DetailsRight>
+    </InlineDetails>
+    <Details>
+      <DetailsMenu>
+        {leader.description.map((content, id) => (
+          <li key={id} dangerouslySetInnerHTML={{ __html: content }} />
+        ))}
+      </DetailsMenu>
+    </Details>
+  </DetailsContainer>
+);
+
 class ResumePage extends Component {
   render() {
     const educationDetails = resume.data.education.map(education => (
@@ -25,13 +54,15 @@ class ResumePage extends Component {
         <InlineDetails>
           <DetailsTitle>{education.title}</DetailsTitle>
           <DetailsRight>
-            <DetailsHidden>Location: </DetailsHidden>{education.location}
+            <DetailsHidden>Location: </DetailsHidden>
+            {education.location}
           </DetailsRight>
         </InlineDetails>
         <InlineDetails>
           <Details>{education.description}</Details>
           <DetailsRight>
-            <DetailsHidden>Graduation: </DetailsHidden>{education.end}
+            <DetailsHidden>Graduation: </DetailsHidden>
+            {education.end}
           </DetailsRight>
         </InlineDetails>
         {education.gpa && (
@@ -50,11 +81,15 @@ class ResumePage extends Component {
               <b>Study Abroad</b>: {education.abroad.description}
             </Details>
             <DetailsRight>
-              <DetailsHidden>Duration: </DetailsHidden>{education.abroad.start}{" "}
-              - {education.abroad.end}
+              <DetailsHidden>Duration: </DetailsHidden>
+              {education.abroad.start} - {education.abroad.end}
             </DetailsRight>
           </InlineDetails>
         )}
+        {education.other &&
+          education.other.map((item, index) => (
+            <Details key={index}>{item.content}</Details>
+          ))}
       </DetailsContainer>
     ));
 
@@ -67,44 +102,21 @@ class ResumePage extends Component {
           <b>Operating Systems</b>: {resume.data.tech.os.join(", ")}
         </Details>
         <Details>
-          <b>Web Development/Design</b>: {resume.data.tech.web.join(", ")}
+          <b>Web/App Development</b>: {resume.data.tech.web.join(", ")}
         </Details>
       </DetailsContainer>
     );
 
-    const leaderDetails = resume.data.leadership.map(leader => (
-      <DetailsContainer key={leader.key}>
-        <InlineDetails>
-          <DetailsTitle>{leader.title}</DetailsTitle>
-          <DetailsRight>
-            <DetailsHidden>Location: </DetailsHidden>{leader.location}
-          </DetailsRight>
-        </InlineDetails>
-        <InlineDetails>
-          <Details>
-            <DetailsHidden>Position: </DetailsHidden>{leader.position}
-          </Details>
-          <DetailsRight>
-            <DetailsHidden>Duration: </DetailsHidden>{leader.start} -{" "}
-            {leader.current ? "Present" : leader.end}
-          </DetailsRight>
-        </InlineDetails>
-        <Details>
-          <DetailsMenu>
-            {leader.description.map((content, id) => (
-              <li key={id}>{content}</li>
-            ))}
-          </DetailsMenu>
-        </Details>
-      </DetailsContainer>
-    ));
+    const leaderDetails = resume.data.leadership.map(renderDetail);
+
+    const experienceDetails = resume.data.experience.map(renderDetail)
 
     const skillsDetails = (
-      <DetailsContainer style={{marginBottom: '35px'}}>
+      <DetailsContainer style={{ marginBottom: "35px" }}>
         <Details>
           <b>Languages</b>:{" "}
           {resume.data.skills.languages
-            .map(l => `${l.name} (${l.level})`)
+            .map(l => `${l.level} ${l.name}`)
             .join(", ")}
         </Details>
         <Details>
@@ -134,14 +146,16 @@ class ResumePage extends Component {
                   href="/Resume.pdf"
                   target="_blank"
                 >
-                  Download Resume PDF
+                  Resume PDF
                 </MoreButton>
               </ButtonContainer>
               <Subtitle>Education</Subtitle>
               {educationDetails}
               <Subtitle>Technical Skills</Subtitle>
               {techDetails}
-              <Subtitle>Leadership and Experience</Subtitle>
+              <Subtitle>Technical Experience</Subtitle>
+              {experienceDetails}
+              <Subtitle>Leadership and Activities</Subtitle>
               {leaderDetails}
               <Subtitle>Skills and Interests</Subtitle>
               {skillsDetails}
@@ -152,7 +166,7 @@ class ResumePage extends Component {
                   href="/Resume.pdf"
                   target="_blank"
                 >
-                  Download Resume PDF
+                  Resume PDF
                 </MoreButton>
               </ButtonContainer>
             </SectionContentContainer>

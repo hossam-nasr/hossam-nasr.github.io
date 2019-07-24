@@ -1,3 +1,5 @@
+import { aalumUrl, theKeyUrl } from "./urls";
+
 const resumeData = {
   title: "Resume!",
   sectionTitle: "Resume",
@@ -14,7 +16,7 @@ const resumeData = {
         end: "05/2021",
         description: "A.B., Computer Science with Secondary in Government.",
         relevant:
-          "Systems Programming, Abstraction in Computation, Theoretical Computer Science, Multivariable Calculus.",
+          "Data Structures and Algorithms, Intro to Quantum Computing, Systems Programming, Abstraction in Computation, Theoretical Computer Science, Multivariable Calculus.",
         gpa: "3.844",
         abroad: {
           description:
@@ -30,80 +32,80 @@ const resumeData = {
         start: "09/2014",
         end: "06/2017",
         description:
-          "Top in Country in Computer Science A-Level. Thirteenth national place in the Egyptian qualifications for the International Olympiad for Informatics."
+          "4 A-levels (Computer Science, Physics, Maths, Arabic) all A*. 2 AS-levels (Chemistry, Biology) both A. 8 IGCSEs all A*",
+        other: [
+          {
+            content:
+              "Top in Country in Computer Science A-Level (June 2017). Top in Region in Biology IGCSE (June 2015). Thirteenth national place in the Egyptian qualifications for the International Olympiad for Informatics"
+          }
+        ]
       }
     ],
     tech: {
       programming: [
         "C",
         "C++",
-        "PHP",
         "Python",
         "JavaScript/jQuery/Node.js",
+        "PHP",
         "React.js",
         "React Native",
-        "MySQL/PHPMyAdmin",
+        "GraphQL/MySQL/PHPMyAdmin",
         "WordPress"
       ],
-      os: ["Windows 10/8/7", "Linux", "Mac OS"],
+      os: ["Windows 10/8/7", "Linux (Ubuntu)", "Mac OS"],
       web: [
+        "React/React Native",
+        "React Redux",
+        "Node.js",
+        "PostgreSQL",
+        "GraphQL",
         "HTML",
         "CSS",
         "SQL",
         "PHP",
         "JavaScript",
-        "jQuery",
-        "Node.js",
-        "React.js",
-        "PostgreSQL",
-        "graphQL"
+        "jQuery"
       ]
     },
-    leadership: [
+    experience: [
+      {
+        title: "Choco Communications GmbH",
+        key: "choco",
+        position: "Growth Development Intern",
+        location: "Berlin, Germany",
+        start: "06/2019",
+        current: true,
+        description: [
+          "Implemented the currently used demo of the app on the company website (at <a href='http://demo.choco.com' target='_blank'>demo.choco.com</a>), including integration with Zendesk Web SDK, using React and React Redux ",
+          "Work with a team of 3 to develop an Android and iOS driver app (codename Optimus Prime) to help suppliers navigate deliveries, using React Native and Google Maps API."
+        ]
+      },
       {
         title: "Harvard Student Agencies DEV",
         key: "dev",
-        position: "Junior Engineer",
+        position: "Software Engineer",
         location: "Cambridge, MA",
         start: "10/2018",
         current: true,
         description: [
-          "Work in teams to build web and app products for startups and small projects, using React, React Native, Node.js"
+          `Worked on teams of 4-7 people developing 2 iOS and Android mobile applications: <a href="${theKeyUrl}" target="_blank">The Key Society</a> and <a href=${aalumUrl} target="_blank">AAlum</a>, using React Native, Redux, GraphQL, PostreSQL`,
+          "Implemented core front-end features in registration flow, data input and validation, unit-testing and debugging",
+          "Worked on developing company-wide norms for unit-testing components and GraphQL queries and mutations"
         ]
-      },
+      }
+    ],
+    leadership: [
       {
-        title: "Harvard Political Review (Tech Team)",
-        key: "hpr",
-        position: "Senior Engineer",
+        title: "Harvard Digital Literacy Project",
+        key: "dlp",
+        position: "Volunteer",
         location: "Cambridge, MA",
-        start: "04/2018",
-        current: true,
+        start: "09/2018",
+        current: false,
+        end: "12/2018",
         description: [
-          "Manage and Develop the Harvard Political Review website www.harvardpolitics.com using WordPress."
-        ]
-      },
-      {
-        title: "International Relations Council",
-        key: "irc",
-        position: "Travelling Member, ICMUN; Director of Cabinet of Syria",
-        location: "Cambridge, MA",
-        start: "01/2018",
-        current: true,
-        description: [
-          "Compete and represent Harvard in MUN conferences over the US. Outstanding Delegate, Honorable Mention.",
-          "Wrote a 70-page background guide on the history and context of the Syrian conflict.",
-          "Run a MUN committee for 18 high schoolers in HMUN Conference, attracting 3,300 delegates from 50 countries."
-        ]
-      },
-      {
-        title: "Harvard College Palestine Solidarity Committee",
-        key: "psc",
-        position: "Vice President",
-        location: "Cambridge, MA",
-        start: "10/2017",
-        current: true,
-        description: [
-          "Plan and organize around 3 speaker events/semester with hundreds of attendees; conduct presentations and teachins 3 times/semester; coordinate with up to 5 other campus groups; manage and delegate tasks; promote events."
+          "Taught 1hr/week class to teach basic CS principles to underprivileged middle school students, starting from Scratch up to Processing.js"
         ]
       },
       {
@@ -114,7 +116,45 @@ const resumeData = {
         start: "09/2017",
         current: true,
         description: [
-          "Conduct and practice weekly exercises in Cybersecurity systems using Linux."
+          "Conduct and practice weekly exercises in Cybersecurity systems using Linux"
+        ]
+      },
+      {
+        title: "Harvard Political Review (Tech Team)",
+        key: "hpr",
+        position: "Senior Engineer",
+        location: "Cambridge, MA",
+        start: "04/2018",
+        current: true,
+        description: [
+          "Manage and Develop the Harvard Political Review website <a href='http://harvardpolitics.com' target='href'>harvardpolitics.com</a> using WordPress"
+        ]
+      },
+      {
+        title: "International Relations Council",
+        key: "irc",
+        position:
+          "Travelling Member, ICMUN; Director of Cabinet of Syria, HMUN",
+        location: "Cambridge, MA",
+        start: "01/2018",
+        current: true,
+        description: [
+          "Compete and represent Harvard in MUN conferences over the US. Won Outstanding Delegate in ChoMUN 2018, Honorable Mention in SCSY 2019",
+          "Wrote a 70-page background guide on the history and context of the Syrian conflict",
+          "Ran a MUN committee for 18 high schoolers in the 65th Harvard MUN Conference, attracting 3,300 delegates from 50 countries"
+        ]
+      },
+      {
+        title: "Harvard College Palestine Solidarity Committee",
+        key: "psc",
+        position: "Co-President",
+        location: "Cambridge, MA",
+        start: "10/2017",
+        current: true,
+        description: [
+          "Plan and organize around 5 events/semester with hundreds of attendees, including keynote speakers, presentations, social and cultural events",
+          "Conduct presentations and teach-ins 5 times/semester; coordinate with up to 5 other campus groups; manage and delegate tasks; promote events",
+          "Organized a week-long series of events featuring multiple prominent speakers such as Cornel West and Marc Lamont Hill and a week-long public art display"
         ]
       },
       {
@@ -127,7 +167,7 @@ const resumeData = {
         current: false,
         description: [
           "Founded the first TEDx event in high school.",
-          "Lead a team of 80 students to organize the event with 11 speakers, 5 performers, and 150 attendees."
+          "Lead a team of 80 students to organize the event with 11 speakers, 5 performers, and 150 attendees"
         ]
       },
       {
@@ -139,7 +179,9 @@ const resumeData = {
         end: "08/2017",
         current: false,
         description: [
-          "Helped around 50 HS students apply to US colleges; conducted bimonthly group advising sessions, 5 outreaches, 10 speaker events, 6 hrs/wk individualized mentoring to group of 12. 9/12 now studying in US."
+          "Helped around 50 promising high school students apply to competitive US colleges",
+          "Conducted bimonthly intesive group advising sessions, ~5 outreaches, and organized ~10 speaker events",
+          "Gave ~6 hrs/wk individualized mentoring to group of 12. 9/12 are now studying in the US"
         ]
       }
     ],
@@ -156,12 +198,16 @@ const resumeData = {
         {
           name: "Italian",
           level: "Intermediate"
+        },
+        {
+          name: "German",
+          level: "Beginner"
         }
       ],
       interests: [
         "Biking",
-        "Classical Music",
-        "Videogames",
+        "Instrumenal Music (e.g. Ludovico Einaudi, Max Richter)",
+        "Videogames (favorites: GTA V, Civilization V)",
         "Travelling",
         "Guitar"
       ]
