@@ -130,7 +130,11 @@ class ProjectPage extends Component {
               <Image src={info.pic} />
             </SilentLink>
           </ImageContainer>
-          <TextContainer>{info.description}</TextContainer>
+          <TextContainer>
+            {Array.isArray(info.description)
+              ? info.description.map(this.renderText)
+              : info.description}
+          </TextContainer>
           {info.role ? (
             <div>
               <SubtitleContainer>{`About my role in ${
