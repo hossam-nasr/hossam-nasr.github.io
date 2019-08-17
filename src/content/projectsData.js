@@ -7,6 +7,8 @@ import toDoListLogo from "../images/todolistlogo.png";
 import aalumLogo from "../images/aalumlogo.png";
 import hummusTrainLogo from "../images/hummus_train_logo.png";
 import hummusTrain from "../images/hummus_train.png";
+import cs124Logo from "../images/cs124.wtf.jpg";
+import deepFriedJelani from "../images/jelani-deep-fried.jpg";
 import { devUrl, theKeyUrl } from "./urls";
 const moment = require("moment");
 
@@ -157,7 +159,7 @@ const projectsData = {
       title: "Forms4Friends",
       start: moment("10112018", "DDMMYYYY"),
       end: moment("10112018", "DDMMYYYY"),
-      significance: 3,
+      significance: 4,
       contribution: 70,
       key: "f4f",
       pic: forms4FriendsLogo,
@@ -173,7 +175,7 @@ const projectsData = {
     },
     {
       title: "Converge",
-      significance: 2,
+      significance: 3,
       contribution: 30,
       start: moment("02122017", "DDMMYYYY"),
       end: moment("04122017", "DDMMYYYY"),
@@ -315,6 +317,52 @@ const projectsData = {
               payload: "namecheap"
             },
             ". Check out the website or the GitHub repo below! Issues and pull requests are welcome."
+          ]
+        }
+      ]
+    },
+    {
+      title: "cs124.wtf",
+      pageBackground: "primary",
+      fontColor: "tertiary",
+      contribution: 100,
+      significance: 2,
+      start: moment("05082019", "DDMMYYYY"),
+      end: moment("05082019", "DDMMYYYY"),
+      key: "cs124.wtf",
+      pic: cs124Logo,
+      background: "transparent",
+      github: "https://github.com/hossam-nasr/cs124.wtf",
+      url: "https://cs124.wtf",
+      summary: "CS124.wtf",
+      description: [
+        {
+          url: "https://cs124.wtf",
+          payload: "cs124.wtf"
+        },
+        ` might be the simplest, stupidst "project" I ever worked on. It happened when a friend and I were browsing through domain names. We were skimming through all these different domain endings, wondering how many of them people bothered to buy. One of these unique domain endings that we discovered was ".wtf," and to our surprise, it was really cheap to purchase domain names for it. I ended up choosing to buy the domain name "cs124.wtf," for the notoriously difficult Harvard Computer Science class, `,
+        {
+          url: "http://sites.fas.harvard.edu/~cs124/cs124/syllabus.html",
+          payload: "CS124: Data Structures and Algorithms"
+        },
+        `. I then set up a very simple React app for it. The app featured a meme that spead at Harvard of Professor Jelani Nelson, who used to teach CS124, while writing on the board a function called 'f', which takes two arguments 'u' and 'k', conveniently resulting in 'f(u,k)'`
+      ],
+      content: [
+        {
+          type: "pic",
+          payload: deepFriedJelani,
+          alt: "Deep Fried Jelani Nelson meme",
+          url: "https://cs124.wtf"
+        },
+        {
+          type: "text",
+          payload: [
+            "I then posted it on the ",
+            {
+              url: "https://web.facebook.com/groups/1253567138064928/",
+              payload: "Harvard meme group"
+            },
+            ". And that's it. That's the project. Check it out below!"
           ]
         }
       ]
