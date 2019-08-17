@@ -5,6 +5,8 @@ import forms4FriendsLogo from "../images/Forms4FriendsLogo.png";
 import convergeLogo from "../images/convergelogo.png";
 import toDoListLogo from "../images/todolistlogo.png";
 import aalumLogo from "../images/aalumlogo.png";
+import hummusTrainLogo from "../images/hummus_train_logo.png";
+import hummusTrain from "../images/hummus_train.png";
 import { devUrl, theKeyUrl } from "./urls";
 const moment = require("moment");
 
@@ -202,6 +204,120 @@ const projectsData = {
       description:
         "This project was a simple to-do list aimed at organizing tasks and schedules for busy students and businesspeople alike. It was implemented as part of my onboarding process for HSA Dev. It used React.js and Styled Components.",
       content: []
+    },
+    {
+      title: "Hummus Train",
+      pageBackground: "hummus",
+      fontColor: "hummusGray",
+      significance: 20,
+      contribution: 100,
+      start: moment("01082019", "DDMMYYYY"),
+      end: moment("17082019", "DDMMYYYY"),
+      key: "hummustrain",
+      pic: hummusTrainLogo,
+      background: "white",
+      url: "https://hummustra.in",
+      github: "https://github.com/hossam-nasr/hummustrain",
+      summary: "ALL ABOARD THE HUMMUS TRAIN!",
+      description: "Choo Choo! All aboard the Hummus Train!",
+      content: [
+        {
+          type: "subtitle",
+          payload: "A random start"
+        },
+        {
+          type: "text",
+          payload: [
+            `Hummus Train might be the most random in-depth project I ever worked on. It all started when I was interning with Choco during Summer 2019. The company had just started a tradition of 'Hummus Thursday' - to go out during lunch and eat Hummus every Thursday. Hummus Thursday included such wonderdul moments as one of the Android developers giving the timeless quote: "This is what Hummus Thursday is all about... eating Hummus." On one of the Hummus Thursdays, a friend at the company, who had a passion for collecting funny/useful domain names, noted that the convenient domain name `,
+            {
+              url: "https://hummustra.in",
+              payload: "hummustra.in"
+            },
+            ` was not only available, but really cheap. So, we split the cost and bought the domain name together, not sure what we were going to do with it. I quickly put up a simple site with just a background image and text reading 'ALL ABOARD THE HUMMUS TRAIN,' then hosted it on GitHub Pages. That weekend, a spark of inspiration hit me while I was in the shower, then I spent the next couple of weeks working on it...`
+          ]
+        },
+        {
+          type: "subtitle",
+          payload: "So what is Hummus Train?"
+        },
+        {
+          type: "pic",
+          payload: hummusTrain,
+          alt: "Hummus Train",
+          url: "https://hummustra.in"
+        },
+        {
+          type: "text",
+          payload: [
+            `Right now, Hummus Train displays a train with many colorful carts on it. Users can at any point 'board the train,' choosing what name to display, a custom color for their cart, and uploading an image that they can crop to exactly fit their face. When they submit, a new cart is added with a stickman on top displaying the user's uploaded cropped image. There is a always a countdown for the next Hummus Train leaving. Every Thursday, the background and title change, displaying confetti and congratulating users on the arrival of Hummus Thursday! Furthermore, at exactly 1:15 PM Berlin time every Thursday (the original time of Hummus Thursday), with one minute left on the clock for the deparure of the train, the timer covers up the whole screen, counting down the last few seconds. Then, the Hummus Train leaves the website, the database is cleared, the timer is reset, and a new empty Hummus Train is ready to receive new passengers!`
+          ]
+        },
+        {
+          type: "subtitle",
+          payload: "How is this built?"
+        },
+        {
+          type: "text",
+          payload: [
+            "Hummus Train was built using ",
+            {
+              url: "https://reactjs.org/",
+              payload: "React.js"
+            },
+            " and bootstrapped using ",
+            {
+              url: "https://github.com/facebook/create-react-app",
+              payload: "Create React App"
+            },
+            ". The database is handled using ",
+            {
+              url: "https://firebase.google.com/docs/firestore",
+              payload: "Firebase Firestore"
+            },
+            " and ",
+            {
+              url: "https://firebase.google.com/docs/storage",
+              payload: "Firebase Storage"
+            },
+            ", which stores all the user-uploaded images. The website uses different React libraries as well, such as ",
+            {
+              url: "https://casesandberg.github.io/react-color/",
+              payload: "React Color"
+            },
+            " for the color pickers, ",
+            {
+              url: "https://www.npmjs.com/package/react-avatar-editor",
+              payload: "React Avatar Editor"
+            },
+            " for handling the cropping of images, and ",
+            {
+              url: "https://reactcommunity.org/react-transition-group/",
+              payload: "React Transition Group"
+            },
+            " for animations. The weekly update function which departs the train and clears the database is handled by a Cloud Function through ",
+            {
+              url: "https://firebase.google.com/docs/functions",
+              payload: "Firebase Cloud Functions"
+            },
+            ". The website is hosted at ",
+            {
+              url: "https://hummustra.in",
+              payload: "hummustra.in"
+            },
+            " through ",
+            {
+              url: "https://pages.github.com/",
+              payload: "GitHub Pages"
+            },
+            ", and the domain is acquired through ",
+            {
+              url: "https://www.namecheap.com/",
+              payload: "namecheap"
+            },
+            ". Check out the website or the GitHub repo below! Issues and pull requests are welcome."
+          ]
+        }
+      ]
     }
   ]
 };
