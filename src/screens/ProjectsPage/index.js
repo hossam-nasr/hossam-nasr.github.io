@@ -67,11 +67,10 @@ class ProjectsPage extends Component {
               return b.end - b.start - (a.end - a.start);
             }
           case "alphabetical":
-            console.log("HERE!!");
-            if (a.title === b.title) {
+            if (a.title.toLowerCase() === b.title.toLowerCase()) {
               return b.significance - a.significance;
             } else {
-              return b.title < a.title ? 1 : -1;
+              return b.title.toLowerCase() < a.title.toLowerCase() ? 1 : -1;
             }
           default:
             return b.significance - a.significance;
