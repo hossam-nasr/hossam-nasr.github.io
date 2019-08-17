@@ -194,7 +194,7 @@ const projectsData = {
     {
       title: "ToDo List",
       contribution: 100,
-      significance: 1,
+      significance: 2,
       start: moment("01112018", "DDMMYYYY"),
       end: moment("02112018", "DDMMYYYY"),
       key: "todo",
@@ -326,7 +326,7 @@ const projectsData = {
       pageBackground: "primary",
       fontColor: "tertiary",
       contribution: 100,
-      significance: 2,
+      significance: 1,
       start: moment("05082019", "DDMMYYYY"),
       end: moment("05082019", "DDMMYYYY"),
       key: "cs124.wtf",
