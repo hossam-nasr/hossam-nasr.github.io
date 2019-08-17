@@ -18,10 +18,27 @@ import {
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 class ProjectPage extends Component {
+  renderText = (text, id) => {
+    if (text.url) {
+      return (
+        <StyledLink key={id} href={text.url} target="_blank">
+          {text.payload}
+        </StyledLink>
+      );
+    }
+    return text;
+  };
+
   renderContent = (content, id) => {
     switch (content.type) {
       case "text":
-        return <TextContainer key={id}>{content.payload}</TextContainer>;
+        return (
+          <TextContainer key={id}>
+            {Array.isArray(content.payload)
+              ? content.payload.map(this.renderText)
+              : content.payload}
+          </TextContainer>
+        );
       case "subtitle":
         return (
           <SubtitleContainer key={id}>{content.payload}</SubtitleContainer>
@@ -75,6 +92,20 @@ class ProjectPage extends Component {
               {content.payload}
             </MoreButton>
           </ButtonContainer>
+        );
+      case "pic":
+        return (
+          <ImageContainer key={id}>
+            <SilentLink target="_blank" href={content.url}>
+              <Image
+                key={id}
+                src={content.payload}
+                alt={content.alt}
+                width={content.width}
+                height={content.height}
+              />
+            </SilentLink>
+          </ImageContainer>
         );
       default:
         return <TextContainer key={id}>{content.payload}</TextContainer>;
