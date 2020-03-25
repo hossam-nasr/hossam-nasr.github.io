@@ -1,16 +1,21 @@
 # Personal Website!
 
-This is my personal website, acting as an online resume. This project was developed using [React](https://reactjs.org) and bootstrapped with  with [Create React App](https://github.com/facebook/create-react-app).
+This is my personal website, acting as an online resume. This project was developed using [React](https://reactjs.org) and bootstrapped with with [Create React App](https://github.com/facebook/create-react-app).
 
 The website is hosted using GitHub Pages on [my personal account](https://hossammabed.com) and using the custom domain [hossammabed.com](https://hossammabed.com) purchased from [Domain.com](http://domain.com).
 
-Due to the way GitHub Pages works, the compiled and built version of the website is hosted on the ```master``` branch of this repo. The original ```React``` source code is hosted on the ```react``` branch. 
+Due to the way GitHub Pages works, the compiled and built version of the website is hosted on the `master` branch of this repo. The original `React` source code is hosted on the `react` branch.
 
 This site is fully responsive! Try minimizing the screen or viewing it on a mobile device.
 
+## Routing and Subdirectories
+
+In order for the website to be hosted on GitHub pages while also including multiple pages, allowing for direct access to multiple pages, refreshed, and history,
+we use a script for the index.html and 404.html to handle that.
+
 ## Available Scripts
 
-If you want to run this repo locally, you can run the following scripts on the ```react``` branch:
+If you want to run this repo locally, you can run the following scripts on the `react` branch:
 
 ### `npm start`
 
